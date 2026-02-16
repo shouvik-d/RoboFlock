@@ -1,0 +1,115 @@
+<?xml version="1.0" ?>
+<robot name="URDF" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find robo_sims)/urdf/materials.xacro" />
+<xacro:include filename="$(find robo_sims)/urdf/robot.trans" />
+<xacro:include filename="$(find robo_sims)/urdf/robot.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="3.8055518249010533e-05 0.024130707433592326 0.369266213440713" rpy="0 0 0"/>
+    <mass value="229.5254360045947"/>
+    <inertia ixx="11.014537" iyy="7.54572" izz="14.911302" ixy="0.000211" iyz="-0.503228" ixz="0.000665"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robo_sims/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robo_sims/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="pushrod_left_1">
+  <inertial>
+    <origin xyz="-5.3476859271539556e-05 0.14634399705747847 -0.008904212344405915" rpy="0 0 0"/>
+    <mass value="1.9530694875086174"/>
+    <inertia ixx="0.016342" iyy="0.00029" izz="0.016343" ixy="-0.0" iyz="-4e-06" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.254 0.2915 -0.4537" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robo_sims/meshes/pushrod_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.254 0.2915 -0.4537" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robo_sims/meshes/pushrod_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="diff_bar_1">
+  <inertial>
+    <origin xyz="-0.0005110269712811635 0.040516910101116244 -0.012699998200990381" rpy="0 0 0"/>
+    <mass value="7.313807013363795"/>
+    <inertia ixx="0.004713" iyy="0.153885" izz="0.157822" ixy="-3.4e-05" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.355 -0.4791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robo_sims/meshes/diff_bar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.355 -0.4791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robo_sims/meshes/diff_bar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="pushrod_right_1">
+  <inertial>
+    <origin xyz="5.341961928828631e-05 0.146344390076493 -0.008904265486525176" rpy="0 0 0"/>
+    <mass value="1.9530655178231793"/>
+    <inertia ixx="0.016342" iyy="0.00029" izz="0.016343" ixy="0.0" iyz="-4e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.254 0.2915 -0.4537" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robo_sims/meshes/pushrod_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.254 0.2915 -0.4537" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robo_sims/meshes/pushrod_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Pin-Slot_23" type="prismatic">
+  <origin xyz="0.254 0.0635 -0.0254" rpy="0 0 0"/>
+  <parent link="diff_bar_1"/>
+  <child link="pushrod_left_1"/>
+  <axis xyz="0 1 0"/>
+  <limit upper="0.1" lower="-0.1" effort="100" velocity="1"/>
+</joint>
+
+<joint name="Revolute_24" type="revolute">
+  <origin xyz="0.0 -0.355 0.4791" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="diff_bar_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+  <limit upper="0.174533" lower="-0.174533" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Pin-Slot_32" type="prismatic">
+  <origin xyz="-0.254 0.0635 -0.0254" rpy="0 0 0"/>
+  <parent link="diff_bar_1"/>
+  <child link="pushrod_right_1"/>
+  <axis xyz="0 1 0"/>
+  <limit upper="0.1" lower="-0.1" effort="100" velocity="1"/>
+</joint>
+
+</robot>
