@@ -1,0 +1,35 @@
+[0.032s] Invoking command in '/home/roboflock/RoboFlock/build/ultrasonic_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u:\[\033[01;36m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/roboflock/RoboFlock/build/ultrasonic_ros -- -j6 -l6
+[0.165s] [ 50%] Built target ultrasonic_ros_lib
+[0.197s] [35m[1mConsolidate compiler generated dependencies of target ultrasonic_publisher[0m
+[0.243s] [ 75%] [32mBuilding CXX object CMakeFiles/ultrasonic_publisher.dir/src/ultrasonic_publisher.cpp.o[0m
+[12.970s] [100%] [32m[1mLinking CXX executable ultrasonic_publisher[0m
+[13.678s] [100%] Built target ultrasonic_publisher
+[13.713s] Invoked command in '/home/roboflock/RoboFlock/build/ultrasonic_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u:\[\033[01;36m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/roboflock/RoboFlock/build/ultrasonic_ros -- -j6 -l6
+[13.745s] Invoking command in '/home/roboflock/RoboFlock/build/ultrasonic_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u:\[\033[01;36m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --install /home/roboflock/RoboFlock/build/ultrasonic_ros
+[13.767s] -- Install configuration: ""
+[13.767s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/include/ultrasonic_ros
+[13.767s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/include/ultrasonic_ros/ultrasonic_usb.hpp
+[13.768s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/lib/libultrasonic_ros_lib.a
+[13.768s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/library_path.sh
+[13.768s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/library_path.dsv
+[13.768s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/lib/ultrasonic_ros/ultrasonic_publisher
+[13.772s] -- Set runtime path of "/home/roboflock/RoboFlock/install/ultrasonic_ros/lib/ultrasonic_ros/ultrasonic_publisher" to ""
+[13.772s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ament_index/resource_index/package_run_dependencies/ultrasonic_ros
+[13.773s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ament_index/resource_index/parent_prefix_path/ultrasonic_ros
+[13.773s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/ament_prefix_path.sh
+[13.773s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/ament_prefix_path.dsv
+[13.773s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/path.sh
+[13.773s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/path.dsv
+[13.773s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/local_setup.bash
+[13.774s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/local_setup.sh
+[13.774s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/local_setup.zsh
+[13.774s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/local_setup.dsv
+[13.774s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/package.dsv
+[13.774s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ament_index/resource_index/packages/ultrasonic_ros
+[13.774s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.775s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ament_cmake_export_libraries-extras.cmake
+[13.775s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.775s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ultrasonic_rosConfig.cmake
+[13.775s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ultrasonic_rosConfig-version.cmake
+[13.775s] -- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/package.xml
+[13.781s] Invoked command in '/home/roboflock/RoboFlock/build/ultrasonic_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u:\[\033[01;36m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --install /home/roboflock/RoboFlock/build/ultrasonic_ros

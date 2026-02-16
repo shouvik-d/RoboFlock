@@ -1,0 +1,16 @@
+[2.328s] Invoking command in '/home/roboflock/RoboFlock/venv/lib/python3.10/site-packages/pkg_resources/tests/data/my-test-package-source': PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u:\[\033[01;36m\]\w\[\033[00m\]\$ PYTHONPATH=/home/roboflock/RoboFlock/build/my-test-package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roboflock/RoboFlock/install/my-test-package/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../../../../build/my-test-package build --build-base /home/roboflock/RoboFlock/build/my-test-package/build install --record /home/roboflock/RoboFlock/build/my-test-package/install.log --single-version-externally-managed
+[3.053s] running egg_info
+[3.055s] creating ../../../../../../../../build/my-test-package/my_test_package.egg-info
+[3.056s] writing ../../../../../../../../build/my-test-package/my_test_package.egg-info/PKG-INFO
+[3.057s] writing dependency_links to ../../../../../../../../build/my-test-package/my_test_package.egg-info/dependency_links.txt
+[3.057s] writing top-level names to ../../../../../../../../build/my-test-package/my_test_package.egg-info/top_level.txt
+[3.058s] writing manifest file '../../../../../../../../build/my-test-package/my_test_package.egg-info/SOURCES.txt'
+[3.060s] reading manifest file '../../../../../../../../build/my-test-package/my_test_package.egg-info/SOURCES.txt'
+[3.062s] writing manifest file '../../../../../../../../build/my-test-package/my_test_package.egg-info/SOURCES.txt'
+[3.063s] running build
+[3.063s] running install
+[3.064s] running install_egg_info
+[3.073s] Copying ../../../../../../../../build/my-test-package/my_test_package.egg-info to /home/roboflock/RoboFlock/install/my-test-package/lib/python3.10/site-packages/my_test_package-1.0-py3.10.egg-info
+[3.075s] running install_scripts
+[3.139s] writing list of installed files to '/home/roboflock/RoboFlock/build/my-test-package/install.log'
+[3.282s] Invoked command in '/home/roboflock/RoboFlock/venv/lib/python3.10/site-packages/pkg_resources/tests/data/my-test-package-source' returned '0': PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u:\[\033[01;36m\]\w\[\033[00m\]\$ PYTHONPATH=/home/roboflock/RoboFlock/build/my-test-package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/roboflock/RoboFlock/install/my-test-package/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../../../../build/my-test-package build --build-base /home/roboflock/RoboFlock/build/my-test-package/build install --record /home/roboflock/RoboFlock/build/my-test-package/install.log --single-version-externally-managed

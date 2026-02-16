@@ -1,0 +1,14 @@
+source;share/ultrasonic_ros/hook/cmake_prefix_path.ps1
+source;share/ultrasonic_ros/hook/cmake_prefix_path.dsv
+source;share/ultrasonic_ros/hook/cmake_prefix_path.sh
+source;share/ultrasonic_ros/hook/path.ps1
+source;share/ultrasonic_ros/hook/path.dsv
+source;share/ultrasonic_ros/hook/path.sh
+source;share/ultrasonic_ros/hook/pythonscriptspath.ps1
+source;share/ultrasonic_ros/hook/pythonscriptspath.dsv
+source;share/ultrasonic_ros/hook/pythonscriptspath.sh
+source;share/ultrasonic_ros/local_setup.bash
+source;share/ultrasonic_ros/local_setup.dsv
+source;share/ultrasonic_ros/local_setup.ps1
+source;share/ultrasonic_ros/local_setup.sh
+source;share/ultrasonic_ros/local_setup.zsh

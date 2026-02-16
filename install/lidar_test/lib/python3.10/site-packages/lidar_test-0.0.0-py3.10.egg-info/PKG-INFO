@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lidar-test
+Version: 0.0.0
+Summary: LiDAR test package for RP LiDAR A1m8
+Home-page: UNKNOWN
+Maintainer: shouvik
+Maintainer-email: shouvik350@gmail.com
+License: Apache-2.0
+Platform: UNKNOWN
+Provides-Extra: test
+License-File: LICENSE
+
+UNKNOWN
+

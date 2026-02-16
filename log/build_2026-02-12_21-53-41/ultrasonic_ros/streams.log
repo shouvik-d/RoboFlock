@@ -1,0 +1,73 @@
+[0.033s] Invoking command in '/home/roboflock/RoboFlock/build/ultrasonic_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u:\[\033[01;36m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake /home/roboflock/RoboFlock/src/ultrasonic_ros -DCMAKE_INSTALL_PREFIX=/home/roboflock/RoboFlock/install/ultrasonic_ros
+[0.168s] -- The C compiler identification is GNU 11.4.0
+[0.308s] -- The CXX compiler identification is GNU 11.4.0
+[0.330s] -- Detecting C compiler ABI info
+[0.511s] -- Detecting C compiler ABI info - done
+[0.529s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.530s] -- Detecting C compile features
+[0.532s] -- Detecting C compile features - done
+[0.541s] -- Detecting CXX compiler ABI info
+[0.727s] -- Detecting CXX compiler ABI info - done
+[0.748s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.749s] -- Detecting CXX compile features
+[0.750s] -- Detecting CXX compile features - done
+[0.760s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.081s] -- Found Python3: /home/roboflock/RoboFlock/venv/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.343s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[1.441s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.452s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.471s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.497s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.532s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.628s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.634s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.807s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.876s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.971s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.990s] -- Looking for pthread.h
+[2.177s] -- Looking for pthread.h - found
+[2.177s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.368s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.372s] -- Found Threads: TRUE  
+[2.513s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.576s] -- Found source file: src/ultrasonic_usb.cpp
+[2.974s] -- Configuring done
+[3.275s] -- Generating done
+[3.293s] -- Build files have been written to: /home/roboflock/RoboFlock/build/ultrasonic_ros
+[3.338s] Invoked command in '/home/roboflock/RoboFlock/build/ultrasonic_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u:\[\033[01;36m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake /home/roboflock/RoboFlock/src/ultrasonic_ros -DCMAKE_INSTALL_PREFIX=/home/roboflock/RoboFlock/install/ultrasonic_ros
+[3.346s] Invoking command in '/home/roboflock/RoboFlock/build/ultrasonic_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u:\[\033[01;36m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/roboflock/RoboFlock/build/ultrasonic_ros -- -j6 -l6
+[3.480s] [ 25%] [32mBuilding CXX object CMakeFiles/ultrasonic_ros_lib.dir/src/ultrasonic_usb.cpp.o[0m
+[4.305s] [ 50%] [32m[1mLinking CXX static library libultrasonic_ros_lib.a[0m
+[4.468s] [ 50%] Built target ultrasonic_ros_lib
+[4.520s] [ 75%] [32mBuilding CXX object CMakeFiles/ultrasonic_publisher.dir/src/ultrasonic_publisher.cpp.o[0m
+[16.887s] [100%] [32m[1mLinking CXX executable ultrasonic_publisher[0m
+[17.589s] [100%] Built target ultrasonic_publisher
+[17.623s] Invoked command in '/home/roboflock/RoboFlock/build/ultrasonic_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u:\[\033[01;36m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/roboflock/RoboFlock/build/ultrasonic_ros -- -j6 -l6
+[17.651s] Invoking command in '/home/roboflock/RoboFlock/build/ultrasonic_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u:\[\033[01;36m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --install /home/roboflock/RoboFlock/build/ultrasonic_ros
+[17.670s] -- Install configuration: ""
+[17.670s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/include/ultrasonic_ros
+[17.671s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/include/ultrasonic_ros/ultrasonic_usb.hpp
+[17.671s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/bin/ultrasonic_publisher
+[17.674s] -- Set runtime path of "/home/roboflock/RoboFlock/install/ultrasonic_ros/bin/ultrasonic_publisher" to ""
+[17.675s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/lib/libultrasonic_ros_lib.a
+[17.676s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/library_path.sh
+[17.676s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/library_path.dsv
+[17.677s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ament_index/resource_index/package_run_dependencies/ultrasonic_ros
+[17.677s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ament_index/resource_index/parent_prefix_path/ultrasonic_ros
+[17.677s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/ament_prefix_path.sh
+[17.678s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/ament_prefix_path.dsv
+[17.678s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/path.sh
+[17.678s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/path.dsv
+[17.679s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/local_setup.bash
+[17.679s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/local_setup.sh
+[17.679s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/local_setup.zsh
+[17.679s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/local_setup.dsv
+[17.680s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/package.dsv
+[17.680s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ament_index/resource_index/packages/ultrasonic_ros
+[17.681s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[17.681s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ament_cmake_export_libraries-extras.cmake
+[17.681s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[17.681s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ultrasonic_rosConfig.cmake
+[17.682s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ultrasonic_rosConfig-version.cmake
+[17.682s] -- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/package.xml
+[17.688s] Invoked command in '/home/roboflock/RoboFlock/build/ultrasonic_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u:\[\033[01;36m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --install /home/roboflock/RoboFlock/build/ultrasonic_ros

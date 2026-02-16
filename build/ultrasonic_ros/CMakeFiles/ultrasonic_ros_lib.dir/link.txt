@@ -1,0 +1,2 @@
+/usr/bin/ar qc libultrasonic_ros_lib.a CMakeFiles/ultrasonic_ros_lib.dir/src/ultrasonic_usb.cpp.o
+/usr/bin/ranlib libultrasonic_ros_lib.a

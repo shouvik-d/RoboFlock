@@ -1,0 +1,259 @@
+[0.000000] (-) TimerEvent: {}
+[0.002180] (-) JobUnselected: {'identifier': 'lidar_test'}
+[0.002331] (-) JobUnselected: {'identifier': 'my-test-package'}
+[0.002395] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.002460] (ultrasonic_ros) JobQueued: {'identifier': 'ultrasonic_ros', 'dependencies': OrderedDict()}
+[0.002520] (ultrasonic_ros) JobStarted: {'identifier': 'ultrasonic_ros'}
+[0.030102] (ultrasonic_ros) JobProgress: {'identifier': 'ultrasonic_ros', 'progress': 'cmake'}
+[0.032003] (ultrasonic_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/roboflock/RoboFlock/src/ultrasonic_ros', '-DCMAKE_INSTALL_PREFIX=/home/roboflock/RoboFlock/install/ultrasonic_ros'], 'cwd': '/home/roboflock/RoboFlock/build/ultrasonic_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboflock'), ('JETSON_MODEL_NAME', 'JETSON_ORIN_NANO'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboflock/RoboFlock/install/ultrasonic_ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/roboflock'), ('OLDPWD', '/home/roboflock/RoboFlock/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;35m\\]\\u:\\[\\033[01;36m\\]\\w\\[\\033[00m\\]\\$'), ('SYSTEMD_EXEC_PID', '2186'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/roboflock/RoboFlock/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'roboflock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboflock'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/home/roboflock/RoboFlock/install/ultrasonic_ros/bin:/home/roboflock/RoboFlock/venv/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/roboflock-desktop:@/tmp/.ICE-unix/2137,unix/roboflock-desktop:/tmp/.ICE-unix/2137'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/192acb7b_920f_46a6_a66b_d945924dcf2b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('VIRTUAL_ENV_PROMPT', '(venv)'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.118'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/roboflock/RoboFlock/install/ultrasonic_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VIRTUAL_ENV', '/home/roboflock/RoboFlock/venv'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboflock/RoboFlock/build/ultrasonic_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/roboflock/RoboFlock/install/ultrasonic_ros:/opt/ros/humble')]), 'shell': False}
+[0.098764] (-) TimerEvent: {}
+[0.170646] (ultrasonic_ros) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.202437] (-) TimerEvent: {}
+[0.303569] (-) TimerEvent: {}
+[0.310404] (ultrasonic_ros) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.332465] (ultrasonic_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.403863] (-) TimerEvent: {}
+[0.504926] (-) TimerEvent: {}
+[0.513154] (ultrasonic_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.531690] (ultrasonic_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.532684] (ultrasonic_ros) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.534176] (ultrasonic_ros) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.543916] (ultrasonic_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.605178] (-) TimerEvent: {}
+[0.706243] (-) TimerEvent: {}
+[0.729303] (ultrasonic_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.750228] (ultrasonic_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.751384] (ultrasonic_ros) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.753060] (ultrasonic_ros) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.762334] (ultrasonic_ros) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.806294] (-) TimerEvent: {}
+[0.906995] (-) TimerEvent: {}
+[1.007845] (-) TimerEvent: {}
+[1.082955] (ultrasonic_ros) StdoutLine: {'line': b'-- Found Python3: /home/roboflock/RoboFlock/venv/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.108119] (-) TimerEvent: {}
+[1.209154] (-) TimerEvent: {}
+[1.310470] (-) TimerEvent: {}
+[1.345374] (ultrasonic_ros) StdoutLine: {'line': b'-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.410606] (-) TimerEvent: {}
+[1.443277] (ultrasonic_ros) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.454580] (ultrasonic_ros) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.473603] (ultrasonic_ros) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.499934] (ultrasonic_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.510709] (-) TimerEvent: {}
+[1.534755] (ultrasonic_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.611021] (-) TimerEvent: {}
+[1.630758] (ultrasonic_ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.636518] (ultrasonic_ros) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.711175] (-) TimerEvent: {}
+[1.809209] (ultrasonic_ros) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.811267] (-) TimerEvent: {}
+[1.877927] (ultrasonic_ros) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.911415] (-) TimerEvent: {}
+[1.972749] (ultrasonic_ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.992070] (ultrasonic_ros) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.011597] (-) TimerEvent: {}
+[2.112422] (-) TimerEvent: {}
+[2.178693] (ultrasonic_ros) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.180002] (ultrasonic_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.212661] (-) TimerEvent: {}
+[2.313725] (-) TimerEvent: {}
+[2.370546] (ultrasonic_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.374549] (ultrasonic_ros) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.413848] (-) TimerEvent: {}
+[2.514787] (-) TimerEvent: {}
+[2.515805] (ultrasonic_ros) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.578614] (ultrasonic_ros) StdoutLine: {'line': b'-- Found source file: src/ultrasonic_usb.cpp\n'}
+[2.614879] (-) TimerEvent: {}
+[2.715744] (-) TimerEvent: {}
+[2.816790] (-) TimerEvent: {}
+[2.917760] (-) TimerEvent: {}
+[2.976110] (ultrasonic_ros) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.017982] (-) TimerEvent: {}
+[3.119008] (-) TimerEvent: {}
+[3.220076] (-) TimerEvent: {}
+[3.277257] (ultrasonic_ros) StdoutLine: {'line': b'-- Generating done\n'}
+[3.295540] (ultrasonic_ros) StdoutLine: {'line': b'-- Build files have been written to: /home/roboflock/RoboFlock/build/ultrasonic_ros\n'}
+[3.320320] (-) TimerEvent: {}
+[3.339459] (ultrasonic_ros) CommandEnded: {'returncode': 0}
+[3.342065] (ultrasonic_ros) JobProgress: {'identifier': 'ultrasonic_ros', 'progress': 'build'}
+[3.344941] (ultrasonic_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/roboflock/RoboFlock/build/ultrasonic_ros', '--', '-j6', '-l6'], 'cwd': '/home/roboflock/RoboFlock/build/ultrasonic_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboflock'), ('JETSON_MODEL_NAME', 'JETSON_ORIN_NANO'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboflock/RoboFlock/install/ultrasonic_ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/roboflock'), ('OLDPWD', '/home/roboflock/RoboFlock/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;35m\\]\\u:\\[\\033[01;36m\\]\\w\\[\\033[00m\\]\\$'), ('SYSTEMD_EXEC_PID', '2186'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/roboflock/RoboFlock/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'roboflock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboflock'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/home/roboflock/RoboFlock/install/ultrasonic_ros/bin:/home/roboflock/RoboFlock/venv/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/roboflock-desktop:@/tmp/.ICE-unix/2137,unix/roboflock-desktop:/tmp/.ICE-unix/2137'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/192acb7b_920f_46a6_a66b_d945924dcf2b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('VIRTUAL_ENV_PROMPT', '(venv)'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.118'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/roboflock/RoboFlock/install/ultrasonic_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VIRTUAL_ENV', '/home/roboflock/RoboFlock/venv'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboflock/RoboFlock/build/ultrasonic_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/roboflock/RoboFlock/install/ultrasonic_ros:/opt/ros/humble')]), 'shell': False}
+[3.420553] (-) TimerEvent: {}
+[3.482388] (ultrasonic_ros) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/ultrasonic_ros_lib.dir/src/ultrasonic_usb.cpp.o\x1b[0m\n'}
+[3.520830] (-) TimerEvent: {}
+[3.621881] (-) TimerEvent: {}
+[3.723074] (-) TimerEvent: {}
+[3.824191] (-) TimerEvent: {}
+[3.925303] (-) TimerEvent: {}
+[4.026421] (-) TimerEvent: {}
+[4.127547] (-) TimerEvent: {}
+[4.228631] (-) TimerEvent: {}
+[4.307027] (ultrasonic_ros) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libultrasonic_ros_lib.a\x1b[0m\n'}
+[4.328885] (-) TimerEvent: {}
+[4.429926] (-) TimerEvent: {}
+[4.470339] (ultrasonic_ros) StdoutLine: {'line': b'[ 50%] Built target ultrasonic_ros_lib\n'}
+[4.522029] (ultrasonic_ros) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/ultrasonic_publisher.dir/src/ultrasonic_publisher.cpp.o\x1b[0m\n'}
+[4.530060] (-) TimerEvent: {}
+[4.631000] (-) TimerEvent: {}
+[4.732038] (-) TimerEvent: {}
+[4.833085] (-) TimerEvent: {}
+[4.934116] (-) TimerEvent: {}
+[5.035166] (-) TimerEvent: {}
+[5.136358] (-) TimerEvent: {}
+[5.237459] (-) TimerEvent: {}
+[5.338575] (-) TimerEvent: {}
+[5.439728] (-) TimerEvent: {}
+[5.540856] (-) TimerEvent: {}
+[5.642146] (-) TimerEvent: {}
+[5.743310] (-) TimerEvent: {}
+[5.844469] (-) TimerEvent: {}
+[5.945748] (-) TimerEvent: {}
+[6.047203] (-) TimerEvent: {}
+[6.148366] (-) TimerEvent: {}
+[6.249887] (-) TimerEvent: {}
+[6.351372] (-) TimerEvent: {}
+[6.452528] (-) TimerEvent: {}
+[6.553660] (-) TimerEvent: {}
+[6.654756] (-) TimerEvent: {}
+[6.755823] (-) TimerEvent: {}
+[6.856858] (-) TimerEvent: {}
+[6.957901] (-) TimerEvent: {}
+[7.058990] (-) TimerEvent: {}
+[7.160071] (-) TimerEvent: {}
+[7.261172] (-) TimerEvent: {}
+[7.362273] (-) TimerEvent: {}
+[7.463410] (-) TimerEvent: {}
+[7.564518] (-) TimerEvent: {}
+[7.665674] (-) TimerEvent: {}
+[7.766885] (-) TimerEvent: {}
+[7.868170] (-) TimerEvent: {}
+[7.969385] (-) TimerEvent: {}
+[8.070554] (-) TimerEvent: {}
+[8.171765] (-) TimerEvent: {}
+[8.272843] (-) TimerEvent: {}
+[8.374060] (-) TimerEvent: {}
+[8.475244] (-) TimerEvent: {}
+[8.576454] (-) TimerEvent: {}
+[8.677634] (-) TimerEvent: {}
+[8.778740] (-) TimerEvent: {}
+[8.879979] (-) TimerEvent: {}
+[8.981194] (-) TimerEvent: {}
+[9.082407] (-) TimerEvent: {}
+[9.183679] (-) TimerEvent: {}
+[9.285022] (-) TimerEvent: {}
+[9.386138] (-) TimerEvent: {}
+[9.487387] (-) TimerEvent: {}
+[9.588582] (-) TimerEvent: {}
+[9.689788] (-) TimerEvent: {}
+[9.790994] (-) TimerEvent: {}
+[9.892083] (-) TimerEvent: {}
+[9.993291] (-) TimerEvent: {}
+[10.094467] (-) TimerEvent: {}
+[10.195645] (-) TimerEvent: {}
+[10.296841] (-) TimerEvent: {}
+[10.398020] (-) TimerEvent: {}
+[10.499207] (-) TimerEvent: {}
+[10.600390] (-) TimerEvent: {}
+[10.701543] (-) TimerEvent: {}
+[10.802637] (-) TimerEvent: {}
+[10.903861] (-) TimerEvent: {}
+[11.005050] (-) TimerEvent: {}
+[11.106244] (-) TimerEvent: {}
+[11.207445] (-) TimerEvent: {}
+[11.308550] (-) TimerEvent: {}
+[11.409766] (-) TimerEvent: {}
+[11.511033] (-) TimerEvent: {}
+[11.612234] (-) TimerEvent: {}
+[11.713440] (-) TimerEvent: {}
+[11.814636] (-) TimerEvent: {}
+[11.915807] (-) TimerEvent: {}
+[12.016978] (-) TimerEvent: {}
+[12.118167] (-) TimerEvent: {}
+[12.219278] (-) TimerEvent: {}
+[12.320485] (-) TimerEvent: {}
+[12.421678] (-) TimerEvent: {}
+[12.522825] (-) TimerEvent: {}
+[12.623918] (-) TimerEvent: {}
+[12.725014] (-) TimerEvent: {}
+[12.826194] (-) TimerEvent: {}
+[12.927586] (-) TimerEvent: {}
+[13.028710] (-) TimerEvent: {}
+[13.129881] (-) TimerEvent: {}
+[13.231089] (-) TimerEvent: {}
+[13.332257] (-) TimerEvent: {}
+[13.433465] (-) TimerEvent: {}
+[13.534658] (-) TimerEvent: {}
+[13.635772] (-) TimerEvent: {}
+[13.736959] (-) TimerEvent: {}
+[13.838112] (-) TimerEvent: {}
+[13.939256] (-) TimerEvent: {}
+[14.040405] (-) TimerEvent: {}
+[14.141493] (-) TimerEvent: {}
+[14.242699] (-) TimerEvent: {}
+[14.343857] (-) TimerEvent: {}
+[14.444902] (-) TimerEvent: {}
+[14.546052] (-) TimerEvent: {}
+[14.647230] (-) TimerEvent: {}
+[14.748359] (-) TimerEvent: {}
+[14.849493] (-) TimerEvent: {}
+[14.950598] (-) TimerEvent: {}
+[15.051738] (-) TimerEvent: {}
+[15.152901] (-) TimerEvent: {}
+[15.254041] (-) TimerEvent: {}
+[15.355140] (-) TimerEvent: {}
+[15.456293] (-) TimerEvent: {}
+[15.557349] (-) TimerEvent: {}
+[15.658516] (-) TimerEvent: {}
+[15.759679] (-) TimerEvent: {}
+[15.860732] (-) TimerEvent: {}
+[15.961862] (-) TimerEvent: {}
+[16.063014] (-) TimerEvent: {}
+[16.164149] (-) TimerEvent: {}
+[16.265306] (-) TimerEvent: {}
+[16.366443] (-) TimerEvent: {}
+[16.467648] (-) TimerEvent: {}
+[16.568713] (-) TimerEvent: {}
+[16.669797] (-) TimerEvent: {}
+[16.770900] (-) TimerEvent: {}
+[16.872025] (-) TimerEvent: {}
+[16.889280] (ultrasonic_ros) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ultrasonic_publisher\x1b[0m\n'}
+[16.972302] (-) TimerEvent: {}
+[17.073458] (-) TimerEvent: {}
+[17.174603] (-) TimerEvent: {}
+[17.275757] (-) TimerEvent: {}
+[17.376829] (-) TimerEvent: {}
+[17.477920] (-) TimerEvent: {}
+[17.579067] (-) TimerEvent: {}
+[17.591220] (ultrasonic_ros) StdoutLine: {'line': b'[100%] Built target ultrasonic_publisher\n'}
+[17.625285] (ultrasonic_ros) CommandEnded: {'returncode': 0}
+[17.627891] (ultrasonic_ros) JobProgress: {'identifier': 'ultrasonic_ros', 'progress': 'install'}
+[17.650722] (ultrasonic_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/roboflock/RoboFlock/build/ultrasonic_ros'], 'cwd': '/home/roboflock/RoboFlock/build/ultrasonic_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboflock'), ('JETSON_MODEL_NAME', 'JETSON_ORIN_NANO'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboflock/RoboFlock/install/ultrasonic_ros/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/roboflock'), ('OLDPWD', '/home/roboflock/RoboFlock/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PS1', '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;35m\\]\\u:\\[\\033[01;36m\\]\\w\\[\\033[00m\\]\\$'), ('SYSTEMD_EXEC_PID', '2186'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/roboflock/RoboFlock/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'roboflock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboflock'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/home/roboflock/RoboFlock/install/ultrasonic_ros/bin:/home/roboflock/RoboFlock/venv/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/roboflock-desktop:@/tmp/.ICE-unix/2137,unix/roboflock-desktop:/tmp/.ICE-unix/2137'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/192acb7b_920f_46a6_a66b_d945924dcf2b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('VIRTUAL_ENV_PROMPT', '(venv)'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.118'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/roboflock/RoboFlock/install/ultrasonic_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VIRTUAL_ENV', '/home/roboflock/RoboFlock/venv'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboflock/RoboFlock/build/ultrasonic_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/roboflock/RoboFlock/install/ultrasonic_ros:/opt/ros/humble')]), 'shell': False}
+[17.672544] (ultrasonic_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.673211] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/include/ultrasonic_ros\n'}
+[17.673392] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/include/ultrasonic_ros/ultrasonic_usb.hpp\n'}
+[17.673587] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/bin/ultrasonic_publisher\n'}
+[17.677150] (ultrasonic_ros) StdoutLine: {'line': b'-- Set runtime path of "/home/roboflock/RoboFlock/install/ultrasonic_ros/bin/ultrasonic_publisher" to ""\n'}
+[17.677408] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/lib/libultrasonic_ros_lib.a\n'}
+[17.678574] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/library_path.sh\n'}
+[17.678890] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/library_path.dsv\n'}
+[17.679111] (-) TimerEvent: {}
+[17.679565] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ament_index/resource_index/package_run_dependencies/ultrasonic_ros\n'}
+[17.679946] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ament_index/resource_index/parent_prefix_path/ultrasonic_ros\n'}
+[17.680256] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/ament_prefix_path.sh\n'}
+[17.680536] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/ament_prefix_path.dsv\n'}
+[17.680815] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/path.sh\n'}
+[17.681093] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/path.dsv\n'}
+[17.681384] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/local_setup.bash\n'}
+[17.681676] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/local_setup.sh\n'}
+[17.681969] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/local_setup.zsh\n'}
+[17.682257] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/local_setup.dsv\n'}
+[17.682600] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/package.dsv\n'}
+[17.682939] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ament_index/resource_index/packages/ultrasonic_ros\n'}
+[17.683298] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[17.683583] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[17.683897] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.684199] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ultrasonic_rosConfig.cmake\n'}
+[17.684433] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ultrasonic_rosConfig-version.cmake\n'}
+[17.684711] (ultrasonic_ros) StdoutLine: {'line': b'-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/package.xml\n'}
+[17.689706] (ultrasonic_ros) CommandEnded: {'returncode': 0}
+[17.759975] (ultrasonic_ros) JobEnded: {'identifier': 'ultrasonic_ros', 'rc': 0}
+[17.762298] (-) EventReactorShutdown: {}

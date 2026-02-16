@@ -1,0 +1,30 @@
+[ 50%] Built target ultrasonic_ros_lib
+[ 75%] [32mBuilding CXX object CMakeFiles/ultrasonic_publisher.dir/src/ultrasonic_publisher.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ultrasonic_publisher[0m
+[100%] Built target ultrasonic_publisher
+-- Install configuration: ""
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/include/ultrasonic_ros
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/include/ultrasonic_ros/ultrasonic_usb.hpp
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/lib/libultrasonic_ros_lib.a
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/library_path.sh
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/library_path.dsv
+-- Installing: /home/roboflock/RoboFlock/install/ultrasonic_ros/lib/ultrasonic_ros/ultrasonic_publisher
+-- Set runtime path of "/home/roboflock/RoboFlock/install/ultrasonic_ros/lib/ultrasonic_ros/ultrasonic_publisher" to ""
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ament_index/resource_index/package_run_dependencies/ultrasonic_ros
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ament_index/resource_index/parent_prefix_path/ultrasonic_ros
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/ament_prefix_path.sh
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/path.sh
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/environment/path.dsv
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/local_setup.bash
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/local_setup.sh
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/local_setup.zsh
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/local_setup.dsv
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/package.dsv
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ament_index/resource_index/packages/ultrasonic_ros
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ultrasonic_rosConfig.cmake
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/cmake/ultrasonic_rosConfig-version.cmake
+-- Up-to-date: /home/roboflock/RoboFlock/install/ultrasonic_ros/share/ultrasonic_ros/package.xml

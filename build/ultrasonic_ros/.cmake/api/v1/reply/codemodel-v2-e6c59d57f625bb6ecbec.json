@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-27d858343c62a5f5ca1e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ultrasonic_ros",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ultrasonic_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ultrasonic_publisher-6d65bb631ee88b0129cc.json",
+					"name" : "ultrasonic_publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ultrasonic_ros_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ultrasonic_ros_lib-0902ca96335ec2b5294d.json",
+					"name" : "ultrasonic_ros_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ultrasonic_ros_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ultrasonic_ros_uninstall-fc36c818fd75d01647eb.json",
+					"name" : "ultrasonic_ros_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-24e6c69ea6fba42ab20b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/roboflock/RoboFlock/build/ultrasonic_ros",
+		"source" : "/home/roboflock/RoboFlock/src/ultrasonic_ros"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
