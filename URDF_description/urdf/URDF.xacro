@@ -610,28 +610,32 @@
   <child link="coupling_right_front_1"/>
 </joint>
 
-<joint name="lf_wheel_to_coupling (1)" type="fixed">
+<joint name="lf_wheel_to_coupling (1)" type="continuous">
   <origin xyz="0.078 -0.000158 0.000119" rpy="0 0 0"/>
   <parent link="coupling_left_front_1"/>
   <child link="wheel_left_front_1"/>
+  <axis xyz="1 0 0"/>
 </joint>
 
-<joint name="lr_wheel_to_coupling (1)" type="fixed">
+<joint name="lr_wheel_to_coupling (1)" type="continuous">
   <origin xyz="0.078 0.000158 0.000119" rpy="0 0 0"/>
   <parent link="coupling_left_rear_1"/>
   <child link="wheel_left_rear_1"/>
+  <axis xyz="1 0 0"/>
 </joint>
 
-<joint name="rr_wheel_to_coupling (1)" type="fixed">
+<joint name="rr_wheel_to_coupling (1)" type="continuous">
   <origin xyz="-0.078 0.000158 0.000119" rpy="0 0 0"/>
   <parent link="coupling_right_rear_1"/>
   <child link="wheel_right_rear_1"/>
+  <axis xyz="1 0 0"/>
 </joint>
 
-<joint name="rf_wheel_to_coupling (1)" type="fixed">
+<joint name="rf_wheel_to_coupling (1)" type="continuous">
   <origin xyz="-0.078 -0.000158 0.000119" rpy="0 0 0"/>
   <parent link="coupling_right_front_1"/>
   <child link="wheel_right_front_1"/>
+  <axis xyz="1 0 0"/>
 </joint>
 
 <joint name="hull_to_frame (1)" type="fixed">
