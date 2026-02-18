@@ -521,7 +521,7 @@
 </joint>
 
 <joint name="right_pushbar_joint" type="fixed">
-  <origin xyz="-0.70223 0.61813 -0.1479" rpy="0 0 0"/>
+  <origin xyz="0.18877 0.09187 -0.1479" rpy="0 0 0"/>
   <parent link="diff_bar_1"/>
   <child link="pushrod_right_1"/>
 </joint>
@@ -615,6 +615,7 @@
   <parent link="coupling_left_front_1"/>
   <child link="wheel_left_front_1"/>
   <axis xyz="1 0 0"/>
+  <dynamics damping="0.1" friction="0.1"/>
 </joint>
 
 <joint name="lr_wheel_to_coupling (1)" type="continuous">
@@ -622,6 +623,7 @@
   <parent link="coupling_left_rear_1"/>
   <child link="wheel_left_rear_1"/>
   <axis xyz="1 0 0"/>
+  <dynamics damping="0.1" friction="0.1"/>
 </joint>
 
 <joint name="rr_wheel_to_coupling (1)" type="continuous">
@@ -629,6 +631,7 @@
   <parent link="coupling_right_rear_1"/>
   <child link="wheel_right_rear_1"/>
   <axis xyz="1 0 0"/>
+  <dynamics damping="0.1" friction="0.1"/>
 </joint>
 
 <joint name="rf_wheel_to_coupling (1)" type="continuous">
@@ -636,6 +639,7 @@
   <parent link="coupling_right_front_1"/>
   <child link="wheel_right_front_1"/>
   <axis xyz="1 0 0"/>
+  <dynamics damping="0.1" friction="0.1"/>
 </joint>
 
 <joint name="hull_to_frame (1)" type="fixed">
