@@ -1,0 +1,31 @@
+digraph G {
+"base_link" -> "diff_bar_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"odom" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 50.397\nBuffer length: 2.52\nMost recent transform: 66.019\nOldest transform: 63.499\n"];
+"base_link" -> "hull_mid_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"hull_mid_1" -> "hull_top_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"diff_bar_1" -> "pushrod_left_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"bracket_left_1" -> "pushrod_left_rocker_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "bracket_left_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"bracket_left_1" -> "rocker_left_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"motor_left_front_1" -> "coupling_left_front_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"rocker_left_1" -> "motor_left_front_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"hull_top_1" -> "lidar_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"motor_left_rear_1" -> "coupling_left_rear_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"rocker_left_1" -> "motor_left_rear_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"motor_right_front_1" -> "coupling_right_front_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"rocker_right_1" -> "motor_right_front_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"bracket_right_1" -> "rocker_right_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"diff_bar_1" -> "pushrod_right_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"bracket_right_1" -> "pushrod_right_rocker_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "bracket_right_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"motor_right_rear_1" -> "coupling_right_rear_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"rocker_right_1" -> "motor_right_rear_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"coupling_left_front_1" -> "wheel_left_front_1"[label=" Broadcaster: default_authority\nAverage rate: 10.404\nBuffer length: 2.499\nMost recent transform: 66.0\nOldest transform: 63.501\n"];
+"coupling_left_rear_1" -> "wheel_left_rear_1"[label=" Broadcaster: default_authority\nAverage rate: 10.404\nBuffer length: 2.499\nMost recent transform: 66.0\nOldest transform: 63.501\n"];
+"coupling_right_front_1" -> "wheel_right_front_1"[label=" Broadcaster: default_authority\nAverage rate: 10.404\nBuffer length: 2.499\nMost recent transform: 66.0\nOldest transform: 63.501\n"];
+"coupling_right_rear_1" -> "wheel_right_rear_1"[label=" Broadcaster: default_authority\nAverage rate: 10.404\nBuffer length: 2.499\nMost recent transform: 66.0\nOldest transform: 63.501\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1772041558.023734"[ shape=plaintext ] ;
+}->"odom";
+}
