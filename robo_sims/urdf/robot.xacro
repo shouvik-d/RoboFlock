@@ -6,97 +6,179 @@
 <xacro:include filename="$(find robo_sims)/urdf/robot.gazebo" />
 <link name="base_link">
   <inertial>
-    <origin xyz="3.8055518249010533e-05 0.024130707433592326 0.369266213440713" rpy="0 0 0"/>
-    <mass value="229.5254360045947"/>
-    <inertia ixx="11.014537" iyy="7.54572" izz="14.911302" ixy="0.000211" iyz="-0.503228" ixz="0.000665"/>
+    <origin xyz="-1.77225813799248e-10 0.05072131681281721 0.4480565147938018" rpy="0 0 0"/>
+    <mass value="112.90683233392802"/>
+    <inertia ixx="3.845852" iyy="3.434291" izz="6.503588" ixy="-0.0" iyz="-0.032901" ixz="0.0"/>
   </inertial>
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://robo_sims/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find robo_sims)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://robo_sims/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find robo_sims)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
 <link name="pushrod_left_1">
   <inertial>
-    <origin xyz="-5.3476859271539556e-05 0.14634399705747847 -0.008904212344405915" rpy="0 0 0"/>
+    <origin xyz="0.5074365231407281 -0.480656002942522 -0.00960421234440606" rpy="0 0 0"/>
     <mass value="1.9530694875086174"/>
     <inertia ixx="0.016342" iyy="0.00029" izz="0.016343" ixy="-0.0" iyz="-4e-06" ixz="-1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.254 0.2915 -0.4537" rpy="0 0 0"/>
+    <origin xyz="0.25325 -0.3355 -0.4544" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://robo_sims/meshes/pushrod_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find robo_sims)/meshes/pushrod_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.254 0.2915 -0.4537" rpy="0 0 0"/>
+    <origin xyz="0.25325 -0.3355 -0.4544" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://robo_sims/meshes/pushrod_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find robo_sims)/meshes/pushrod_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
 <link name="diff_bar_1">
   <inertial>
-    <origin xyz="-0.0005110269712811635 0.040516910101116244 -0.012699998200990381" rpy="0 0 0"/>
+    <origin xyz="-0.0005110269712811609 0.04051691010111613 -0.012699998200990381" rpy="0 0 0"/>
     <mass value="7.313807013363795"/>
     <inertia ixx="0.004713" iyy="0.153885" izz="0.157822" ixy="-3.4e-05" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
     <origin xyz="-0.0 0.355 -0.4791" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://robo_sims/meshes/diff_bar_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find robo_sims)/meshes/diff_bar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0 0.355 -0.4791" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://robo_sims/meshes/diff_bar_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find robo_sims)/meshes/diff_bar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
 <link name="pushrod_right_1">
   <inertial>
-    <origin xyz="5.341961928828631e-05 0.146344390076493 -0.008904265486525176" rpy="0 0 0"/>
+    <origin xyz="-0.5089365803807114 -0.4806556099235074 -0.00960426548652521" rpy="0 0 0"/>
     <mass value="1.9530655178231793"/>
     <inertia ixx="0.016342" iyy="0.00029" izz="0.016343" ixy="0.0" iyz="-4e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.254 0.2915 -0.4537" rpy="0 0 0"/>
+    <origin xyz="-0.25475 -0.3355 -0.4544" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://robo_sims/meshes/pushrod_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find robo_sims)/meshes/pushrod_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.254 0.2915 -0.4537" rpy="0 0 0"/>
+    <origin xyz="-0.25475 -0.3355 -0.4544" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://robo_sims/meshes/pushrod_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find robo_sims)/meshes/pushrod_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<joint name="Pin-Slot_23" type="prismatic">
-  <origin xyz="0.254 0.0635 -0.0254" rpy="0 0 0"/>
+<link name="bracket_right_1">
+  <inertial>
+    <origin xyz="-0.010660646220672088 0.00011071921954531123 0.02799514939032105" rpy="0 0 0"/>
+    <mass value="8.134761901401534"/>
+    <inertia ixx="0.15001" iyy="0.021663" izz="0.12968" ixy="-7e-06" iyz="0.000427" ixz="-0.001702"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.28213 -0.0 -0.2931" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robo_sims)/meshes/bracket_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.28213 -0.0 -0.2931" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robo_sims)/meshes/bracket_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="bracket_left_1">
+  <inertial>
+    <origin xyz="0.010660646220672032 0.00011071921944139234 0.02799514939032144" rpy="0 0 0"/>
+    <mass value="8.134761901401559"/>
+    <inertia ixx="0.15001" iyy="0.021663" izz="0.12968" ixy="7e-06" iyz="0.000427" ixz="0.001702"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.28213 -0.0 -0.2931" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robo_sims)/meshes/bracket_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.28213 -0.0 -0.2931" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robo_sims)/meshes/bracket_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="pushrod_right_1">
+  <inertial>
+    <origin xyz="0.44804241961928853 -0.4084366099235074 0.11403373451347482" rpy="0 0 0"/>
+    <mass value="1.9530655178231793"/>
+    <inertia ixx="0.016342" iyy="0.00029" izz="0.016343" ixy="0.0" iyz="-4e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.702229 -0.263281 -0.330762" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robo_sims)/meshes/pushrod_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.702229 -0.263281 -0.330762" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robo_sims)/meshes/pushrod_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="pushrod_left_1">
+  <inertial>
+    <origin xyz="0.44295552314072817 0.11781899705747806 0.11195278765559397" rpy="0 0 0"/>
+    <mass value="1.9530694875086174"/>
+    <inertia ixx="0.016342" iyy="0.00029" izz="0.016343" ixy="-0.0" iyz="-4e-06" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.188769 0.262975 -0.332843" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robo_sims)/meshes/pushrod_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.188769 0.262975 -0.332843" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find robo_sims)/meshes/pushrod_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="left_pushbar_joint" type="PinSlot">
+  <origin xyz="-0.188769 0.092025 -0.146257" rpy="0 0 0"/>
   <parent link="diff_bar_1"/>
   <child link="pushrod_left_1"/>
-  <axis xyz="0 1 0"/>
-  <limit upper="0.1" lower="-0.1" effort="100" velocity="1"/>
 </joint>
 
-<joint name="Revolute_24" type="revolute">
+<joint name="diff_bar_joint" type="revolute">
   <origin xyz="0.0 -0.355 0.4791" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="diff_bar_1"/>
@@ -104,12 +186,36 @@
   <limit upper="0.174533" lower="-0.174533" effort="100" velocity="100"/>
 </joint>
 
-<joint name="Pin-Slot_32" type="prismatic">
-  <origin xyz="-0.254 0.0635 -0.0254" rpy="0 0 0"/>
+<joint name="right_pushbar_joint" type="PinSlot">
+  <origin xyz="-0.702229 0.618281 -0.148338" rpy="0 0 0"/>
   <parent link="diff_bar_1"/>
   <child link="pushrod_right_1"/>
-  <axis xyz="0 1 0"/>
-  <limit upper="0.1" lower="-0.1" effort="100" velocity="1"/>
+</joint>
+
+<joint name="right_rocker_joint" type="continuous">
+  <origin xyz="-0.28213 0.0 0.2931" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="bracket_right_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="left_rocker_joint" type="continuous">
+  <origin xyz="0.28213 0.0 0.2931" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="bracket_left_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="right_pushrocker_joint" type="PinSlot">
+  <origin xyz="-0.420099 0.263281 0.037662" rpy="0 0 0"/>
+  <parent link="bracket_right_1"/>
+  <child link="pushrod_right_1"/>
+</joint>
+
+<joint name="left_pushrocker_joint" type="PinSlot">
+  <origin xyz="-0.470899 -0.262975 0.039743" rpy="0 0 0"/>
+  <parent link="bracket_left_1"/>
+  <child link="pushrod_left_1"/>
 </joint>
 
 </robot>
