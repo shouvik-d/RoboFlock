@@ -508,6 +508,29 @@
   </collision>
 </link>
 
+<link name="lidar_link">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.12"/>
+    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <cylinder radius="0.08355" length="0.055"/>
+    </geometry>
+    <material name="black">
+        <color rgba="0 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <cylinder radius="0.08355" length="0.055"/>
+    </geometry>
+  </collision>
+</link>
+
 <joint name="left_pushbar_joint" type="fixed">
   <origin xyz="-0.18877 0.09187 -0.1479" rpy="0 0 0"/>
   <parent link="diff_bar_1"/>
@@ -550,67 +573,67 @@
   <child link="pushrod_left_rocker_1"/>
 </joint>
 
-<joint name="left_rocker_to_bracket (1)" type="fixed">
+<joint name="left_rocker_to_bracket" type="fixed">
   <origin xyz="0.0254 -0.22225 0.0" rpy="0 0 0"/>
   <parent link="bracket_left_1"/>
   <child link="rocker_left_1"/>
 </joint>
 
-<joint name="right_rocker_to_bracket (1)" type="fixed">
+<joint name="right_rocker_to_bracket" type="fixed">
   <origin xyz="-0.0254 -0.22225 0.0" rpy="0 0 0"/>
   <parent link="bracket_right_1"/>
   <child link="rocker_right_1"/>
 </joint>
 
-<joint name="lf_motor_to_rocker (1)" type="fixed">
+<joint name="lf_motor_to_rocker" type="fixed">
   <origin xyz="-0.0682 -0.18232 -0.25583" rpy="0 0 0"/>
   <parent link="rocker_left_1"/>
   <child link="motor_left_front_1"/>
 </joint>
 
-<joint name="lf_coupling_to_motor (1)" type="fixed">
+<joint name="lf_coupling_to_motor" type="fixed">
   <origin xyz="0.0015 0.02357 -0.02357" rpy="0 0 0"/>
   <parent link="motor_left_front_1"/>
   <child link="coupling_left_front_1"/>
 </joint>
 
-<joint name="lr_motor_to_rocker (1)" type="fixed">
+<joint name="lr_motor_to_rocker" type="fixed">
   <origin xyz="-0.0682 0.57968 -0.25583" rpy="0 0 0"/>
   <parent link="rocker_left_1"/>
   <child link="motor_left_rear_1"/>
 </joint>
 
-<joint name="rf_motor_to_rocker (1)" type="fixed">
+<joint name="rf_motor_to_rocker" type="fixed">
   <origin xyz="0.0682 -0.13518 -0.25583" rpy="0 0 0"/>
   <parent link="rocker_right_1"/>
   <child link="motor_right_front_1"/>
 </joint>
 
-<joint name="rr_motor_to_rocker (1)" type="fixed">
+<joint name="rr_motor_to_rocker" type="fixed">
   <origin xyz="0.0682 0.57968 -0.25583" rpy="0 0 0"/>
   <parent link="rocker_right_1"/>
   <child link="motor_right_rear_1"/>
 </joint>
 
-<joint name="lr_coupling_to_motor (1)" type="fixed">
+<joint name="lr_coupling_to_motor" type="fixed">
   <origin xyz="0.0027 0.02357 -0.02357" rpy="0 0 0"/>
   <parent link="motor_left_rear_1"/>
   <child link="coupling_left_rear_1"/>
 </joint>
 
-<joint name="rr_coupling_to_motor (1)" type="fixed">
+<joint name="rr_coupling_to_motor" type="fixed">
   <origin xyz="-0.0015 0.02357 -0.02357" rpy="0 0 0"/>
   <parent link="motor_right_rear_1"/>
   <child link="coupling_right_rear_1"/>
 </joint>
 
-<joint name="rf_coupling_to_motor (1)" type="fixed">
+<joint name="rf_coupling_to_motor" type="fixed">
   <origin xyz="-0.0015 -0.02357 -0.02357" rpy="0 0 0"/>
   <parent link="motor_right_front_1"/>
   <child link="coupling_right_front_1"/>
 </joint>
 
-<joint name="lf_wheel_to_coupling (1)" type="continuous">
+<joint name="lf_wheel_to_coupling" type="continuous">
   <origin xyz="0.078 -0.000158 0.000119" rpy="0 0 0"/>
   <parent link="coupling_left_front_1"/>
   <child link="wheel_left_front_1"/>
@@ -618,7 +641,7 @@
   <dynamics damping="0.1" friction="0.1"/>
 </joint>
 
-<joint name="lr_wheel_to_coupling (1)" type="continuous">
+<joint name="lr_wheel_to_coupling" type="continuous">
   <origin xyz="0.078 0.000158 0.000119" rpy="0 0 0"/>
   <parent link="coupling_left_rear_1"/>
   <child link="wheel_left_rear_1"/>
@@ -626,7 +649,7 @@
   <dynamics damping="0.1" friction="0.1"/>
 </joint>
 
-<joint name="rr_wheel_to_coupling (1)" type="continuous">
+<joint name="rr_wheel_to_coupling" type="continuous">
   <origin xyz="-0.078 0.000158 0.000119" rpy="0 0 0"/>
   <parent link="coupling_right_rear_1"/>
   <child link="wheel_right_rear_1"/>
@@ -634,7 +657,7 @@
   <dynamics damping="0.1" friction="0.1"/>
 </joint>
 
-<joint name="rf_wheel_to_coupling (1)" type="continuous">
+<joint name="rf_wheel_to_coupling" type="continuous">
   <origin xyz="-0.078 -0.000158 0.000119" rpy="0 0 0"/>
   <parent link="coupling_right_front_1"/>
   <child link="wheel_right_front_1"/>
@@ -642,7 +665,7 @@
   <dynamics damping="0.1" friction="0.1"/>
 </joint>
 
-<joint name="hull_to_frame (1)" type="fixed">
+<joint name="hull_to_frame" type="fixed">
   <origin xyz="0.160015 -0.293904 0.5241" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="hull_mid_1"/>
@@ -652,6 +675,12 @@
   <origin xyz="0.139985 0.293904 0.175" rpy="0 0 0"/>
   <parent link="hull_mid_1"/>
   <child link="hull_top_1"/>
+</joint>
+
+<joint name="lidar_joint" type="fixed">
+  <parent link="hull_top_1"/>
+  <child link="lidar_link"/>
+  <origin xyz="-0.2999999663283473 0 0.25" rpy="0 0 0"/> 
 </joint>
 
 </robot>
