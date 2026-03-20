@@ -1,3 +1,0 @@
-[console_scripts]
-lidar_subscriber = lidar_test.test_lidar:main
-
