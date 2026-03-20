@@ -14,7 +14,11 @@
 
 <transmission name="lf_wheel_trans">
   <type>transmission_interface/SimpleTransmission</type>
+<<<<<<< HEAD
   <joint name="lf_wheel_to_coupling (1)">
+=======
+  <joint name="lf_wheel_to_coupling">
+>>>>>>> faa0e8358101bead9ad2591501b71885c5b5ade5
     <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
   </joint>
   <actuator name="lf_wheel_motor">
@@ -25,7 +29,11 @@
 
 <transmission name="lr_wheel_trans">
   <type>transmission_interface/SimpleTransmission</type>
+<<<<<<< HEAD
   <joint name="lr_wheel_to_coupling (1)">
+=======
+  <joint name="lr_wheel_to_coupling">
+>>>>>>> faa0e8358101bead9ad2591501b71885c5b5ade5
     <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
   </joint>
   <actuator name="lr_wheel_motor">
@@ -36,7 +44,11 @@
 
 <transmission name="rf_wheel_trans">
   <type>transmission_interface/SimpleTransmission</type>
+<<<<<<< HEAD
   <joint name="rf_wheel_to_coupling (1)">
+=======
+  <joint name="rf_wheel_to_coupling">
+>>>>>>> faa0e8358101bead9ad2591501b71885c5b5ade5
     <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
   </joint>
   <actuator name="rf_wheel_motor">
@@ -47,7 +59,11 @@
 
 <transmission name="rr_wheel_trans">
   <type>transmission_interface/SimpleTransmission</type>
+<<<<<<< HEAD
   <joint name="rr_wheel_to_coupling (1)">
+=======
+  <joint name="rr_wheel_to_coupling">
+>>>>>>> faa0e8358101bead9ad2591501b71885c5b5ade5
     <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
   </joint>
   <actuator name="rr_wheel_motor">
