@@ -3,6 +3,9 @@
 #include <atomic>
 #include <chrono>
 #include <cstring>
+#include <vector>
+#include <map>
+#include <functional>
 #include <stdlib.h>
 #include <errno.h>
 #include <termios.h>
@@ -10,112 +13,298 @@
 #include <sys/stat.h>
 #include <sys/ioctl.h>
 #include <unistd.h>
-#include "rclcpp/rclcpp.hpp"
-#include "sensor_msgs/msg/range.hpp"
+#include <rclcpp/rclcpp.hpp>
+#include <sensor_msgs/msg/range.hpp>
 #include "ultrasonic_ros/ultrasonic_usb.hpp"
+#include "ultrasonic_ros/ultrasonic_publisher.hpp"
 
-using namespace std::chrono_literals;
+#define LEFT 	0
+#define CENTER 	1
+#define RIGHT	2
 
-class UltrasonicPublisher : public rclcpp::Node
+// CLASS INIT / DESTROY ******************************************
+UltrasonicPublisher::UltrasonicPublisher(const rclcpp::NodeOptions & options)
+: Node("ultrasonic_publisher", options)
+{		
+	declare_parameters();
+	
+	param_callback_handler_ = this->add_on_set_parameters_callback(
+		std::bind(&UltrasonicPublisher::on_parameter_change, this, std::placeholders::_1)
+	);
+	
+	for (size_t i = 0; i < frame_ids_.size(); i++)
+	{
+		std::string topic = "range/" + frame_ids_[i];
+		auto publisher = this->create_publisher<sensor_msgs::msg::Range>(topic, 10);
+		
+		publishers_.push_back(publisher);
+		RCLCPP_INFO(this->get_logger(), "Created publisher for %s on topic %s",
+			frame_ids_[i].c_str(), topic.c_str()
+		);
+	}
+	
+	sensor_data_.resize(frame_ids_.size());
+	sensor_msgs_.resize(frame_ids_.size());
+	
+	if (!initialize_sensors())
+	{
+		RCLCPP_ERROR(this->get_logger(), 
+			"Failed to initialize ultrasonic sensors."
+		);
+		return;
+	}
+	
+	int period_ms = static_cast<int>(1000.0 / update_rate_);
+	timer_ = this->create_wall_timer(
+		std::chrono::milliseconds(period_ms),
+		std::bind(&UltrasonicPublisher::timer_callback, this)
+	);
+	
+	RCLCPP_INFO(this->get_logger(), "Ultrasonic Publisher initialized with %zu sensors at %.1f Hz",
+		frame_ids_.size(), update_rate_
+	);
+}
+
+UltrasonicPublisher::~UltrasonicPublisher()
 {
-	public:
-		UltrasonicPublisher()
-		: Node("ultrasonic_publisher")
+	RCLCPP_INFO(this->get_logger(), "Ultrasonic publisher shutting down...");
+}
+
+bool 
+UltrasonicPublisher::initialize_sensors()
+{
+	auto ret = init_arduino();
+	switch (ret)
+	{
+	case -1:
+		RCLCPP_ERROR(this->get_logger(), "Failed to open.\n");
+		break;
+	case -2:
+		RCLCPP_ERROR(this->get_logger(), "Failed to get attributes.\n");
+		break;
+	case -3:
+		RCLCPP_ERROR(this->get_logger(), "Failed to configure.\n");
+		break;
+	default:
+		RCLCPP_INFO(this->get_logger(), "Successfully initialized Arduino.\n");
+		break;
+	}
+	
+	if (ret < 0) { return false; }
+	
+	for (size_t i = 0; i < frame_ids_.size(); i++)
+	{
+		auto message = sensor_msgs::msg::Range();
+		message.radiation_type = sensor_msgs::msg::Range::ULTRASOUND;
+		message.field_of_view = field_of_view_;
+		message.min_range = min_range_;
+		message.max_range = max_range_;
+		message.header.frame_id = frame_ids_[i];
+		sensor_msgs_.push_back(message);
+	}
+	
+	return true;
+}
+
+// CLASS PARAMETERS ******************************************
+void
+UltrasonicPublisher::declare_parameters()
+{
+	this->declare_parameter<std::vector<std::string>>("frame_ids",
+		std::vector<std::string>{
+			"left_ultrasonic", 
+			"center_ultrasonic", 
+			"right_ultrasonic"
+		}
+	);
+	
+	this->declare_parameter<double>("update_rate", 20.0); // Hz
+	this->declare_parameter<double>("field_of_view", 0.5236); // ~30 degrees
+	this->declare_parameter<double>("min_range", 0.02); // meters
+	this->declare_parameter<double>("max_range", 2.0); // meters
+	this->declare_parameter<bool>("publish_tf", false);
+	this->declare_parameter<bool>("use_sim_time", false);
+	
+	frame_ids_ = this->get_parameter("frame_ids").as_string_array();
+	
+	if (frame_ids_.empty())
+	{
+		RCLCPP_WARN(this->get_logger(),
+			"No frame IDs provided, using defaults"
+		);
+		
+		frame_ids_ = {
+			"left_ultrasonic", 
+			"center_ultrasonic",
+			"right_ultrasonic"
+		};
+	}
+	
+	update_rate_ = this->get_parameter("update_rate").as_double();
+	field_of_view_ = this->get_parameter("field_of_view").as_double();
+	min_range_ = this->get_parameter("min_range").as_double();
+	max_range_ = this->get_parameter("max_range").as_double();
+	publish_tf_ = this->get_parameter("publish_tf").as_bool();
+	use_sim_time_ = this->get_parameter("use_sim_time").as_bool();
+}
+
+rcl_interfaces::msg::SetParametersResult
+UltrasonicPublisher::on_parameter_change(const std::vector<rclcpp::Parameter> & parameters)
+{
+	rcl_interfaces::msg::SetParametersResult result;
+	result.successful = true;
+	
+	for (const auto & param : parameters)
+	{
+		if (param.get_name() == "frame_ids")
 		{
-			auto ret = init_arduino ();
-			switch (ret) {
-			case -1:
-				RCLCPP_INFO(this->get_logger(), "Failed to open.\n");
-				break;
-			case -2:
-				RCLCPP_INFO(this->get_logger(), "Failed to get attributes.\n");
-				break;
-			case -3:
-				RCLCPP_INFO(this->get_logger(), "Failed to configure.\n");
-				break;
-			default:
-				RCLCPP_INFO(this->get_logger(), "Successfully initialized Arduino.\n");
-				break;
+			if (param.get_type() == rclcpp::ParameterType::PARAMETER_STRING_ARRAY)
+			{
+				auto new_frame_ids = param.as_string_array();
+				if (new_frame_ids.size() == frame_ids_.size())
+				{
+					frame_ids_ = new_frame_ids;
+					RCLCPP_INFO(this->get_logger(),
+						"Updated frame IDs.\n"
+					);
+				}
+				else
+				{
+					RCLCPP_WARN(this->get_logger(),
+						"Cannot change number of sensors dynamically.\n"
+					);
+					result.successful = false;
+				}
 			}
-			
-			L_publisher_ = this->create_publisher<sensor_msgs::msg::Range>("L_ultrasonic", 10);
-			C_publisher_ = this->create_publisher<sensor_msgs::msg::Range>("C_ultrasonic", 10);
-			R_publisher_ = this->create_publisher<sensor_msgs::msg::Range>("R_ultrasonic", 10);
+		}
+		else if (param.get_name() == "update_rate")
+		{
+			update_rate_ = param.as_double();
+			// Reset timer
+			int period_ms = static_cast<int>(1000.0 / update_rate_);
 			timer_ = this->create_wall_timer(
-			500ms, std::bind(&UltrasonicPublisher::timer_callback, this));
+				std::chrono::milliseconds(period_ms),
+				std::bind(&UltrasonicPublisher::timer_callback, this)
+			);
 		}
-		
-		uint8_t l_data;
-		uint8_t c_data;
-		uint8_t r_data;
-		
-	private:
-		void timer_callback()
+		else if (param.get_name() == "field_of_view")
 		{
-			get_arduino_data (&l_data, &c_data, &r_data);
-			
-			RCLCPP_INFO(this->get_logger(), "%d, %d, %d", l_data, c_data, r_data);
-			if (l_data < 201) // Max dist. we care about is 200cm
+			auto new_field_of_view = param.as_double();
+			if (new_field_of_view > 0 && new_field_of_view < 3.141)
 			{
-				auto L_message = sensor_msgs::msg::Range();
-				L_message.header.stamp = this->get_clock()->now();
-				L_message.header.frame_id = "left_ultrasonic_frame";
-				L_message.radiation_type = sensor_msgs::msg::Range::ULTRASOUND;
-				L_message.field_of_view = 0.1; // Radians, should change based on docs
-				L_message.min_range = 0.01; //meters
-				L_message.max_range = 2.0;
-				L_message.range = ( (float)l_data / 100.0 );
-				RCLCPP_INFO(this->get_logger(), " | Left: %f m | ", L_message.range);
-				L_publisher_->publish(L_message);
+				field_of_view_ = new_field_of_view;
+				RCLCPP_INFO(this->get_logger(),
+					"Updated field of view.\n"
+				);
 			}
-			
-			if (c_data < 201) // Max dist. we care about is 200cm
+			else
 			{
-				auto C_message = sensor_msgs::msg::Range();
-				C_message.header.stamp = this->get_clock()->now();
-				C_message.header.frame_id = "center_ultrasonic_frame";
-				C_message.radiation_type = sensor_msgs::msg::Range::ULTRASOUND;
-				C_message.field_of_view = 0.1; // Radians, should change based on docs
-				C_message.min_range = 0.01; //meters
-				C_message.max_range = 2.0;
-				C_message.range = ( (float)c_data / 100.0 );
-				RCLCPP_INFO(this->get_logger(), " | Center: %f m| ", C_message.range);
-				C_publisher_->publish(C_message);
+				RCLCPP_WARN(this->get_logger(),
+					"FoV of %lf radians is not possible.\n",
+					new_field_of_view
+				);
+				result.successful = false;
 			}
-			
-			if (r_data < 201) // Max dist. we care about is 200cm
-			{
-				auto R_message = sensor_msgs::msg::Range();
-				R_message.header.stamp = this->get_clock()->now();
-				R_message.header.frame_id = "right_ultrasonic_frame";
-				R_message.radiation_type = sensor_msgs::msg::Range::ULTRASOUND;
-				R_message.field_of_view = 0.1; // Radians, should change based on docs
-				R_message.min_range = 0.01; //meters
-				R_message.max_range = 2.0;
-				R_message.range = ( (float)r_data / 100.0 );
-				RCLCPP_INFO(this->get_logger(), " | Right: %f m | ", R_message.range);
-				R_publisher_->publish(R_message);
-			}
-			
 		}
-		rclcpp::TimerBase::SharedPtr timer_;
-		rclcpp::Publisher<sensor_msgs::msg::Range>::SharedPtr L_publisher_;
-		rclcpp::Publisher<sensor_msgs::msg::Range>::SharedPtr C_publisher_;
-		rclcpp::Publisher<sensor_msgs::msg::Range>::SharedPtr R_publisher_;
-};
+		else if (param.get_name() == "min_range")
+		{
+			auto new_min = param.as_double();
+			if (new_min > 0.0 && new_min < max_range_)
+			{
+				min_range_ = new_min;
+				RCLCPP_INFO(this->get_logger(),
+					"Update minimum range."
+				);
+			}
+			else
+			{
+				RCLCPP_WARN(this->get_logger(),
+					"Minimum range of %lf is not possible.\n",
+					new_min
+				);
+				result.successful = false;
+			}
+		}
+		else if (param.get_name() == "max_range")
+		{
+			auto new_max = param.as_double();
+			if (new_max > 0.0 && new_max > min_range_)
+			{
+				max_range_ = new_max;
+				RCLCPP_INFO(this->get_logger(),
+					"Update maximum range."
+				);
+			}
+			else
+			{
+				RCLCPP_WARN(this->get_logger(),
+					"Maximum range of %lf is not possible.\n",
+					new_max
+				);
+				result.successful = false;
+			}
+		}
+		else if (param.get_name() == "publish_tf")
+		{
+			publish_tf_ = param.as_bool();
+			RCLCPP_INFO(this->get_logger(),
+				"Updated `publish_tf` boolean.\n"
+			);
+		}
+		else if (param.get_name() == "use_sim_time")
+		{
+			use_sim_time_ = param.as_bool();
+			RCLCPP_INFO(this->get_logger(),
+				"Updated `use_sim_time` boolean.\n"
+			);
+		}
+		else
+		{
+			RCLCPP_WARN(this->get_logger(),
+				"Unrecognized parameter.\n"
+			);
+		}			
+	}
+	
+	return result;
+}
+			
+void
+UltrasonicPublisher::publish_data()
+{
+	auto now = this->get_clock()->now();
+	
+	for (size_t i = 0; i < publishers_.size(); i++)
+	{
+		sensor_msgs_[i].header.stamp = now;
+		sensor_msgs_[i].range = sensor_data_[i];
+		publishers_[i]->publish(sensor_msgs_[i]);
+		RCLCPP_DEBUG(this->get_logger(),
+			"Published %s: range=%f\n",
+			frame_ids_[i].c_str(), sensor_msgs_[i].range
+		);
+	}
+}
+
+		
+void
+UltrasonicPublisher::timer_callback()
+{
+	get_arduino_data(&sensor_data_[LEFT], &sensor_data_[CENTER], &sensor_data_[RIGHT]);	
+	publish_data();
+}
+		
 
 
-int main(int argc, char * argv[])
+
+int 
+main (int argc, char * argv[])
 {
 	rclcpp::init(argc, argv);
 	rclcpp::spin(std::make_shared<UltrasonicPublisher>());
 	rclcpp::shutdown();
 	return 0;
 }
-
-
-
-
 
 
 

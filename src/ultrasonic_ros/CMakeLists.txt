@@ -21,6 +21,7 @@ include_directories(
 
 set(LIB_HEADER_FILES
 	include/${PROJECT_NAME}/ultrasonic_usb.hpp
+	include/${PROJECT_NAME}/ultrasonic_publisher.hpp
 )
 
 set(LIB_SOURCE_FILES
@@ -80,5 +81,12 @@ target_link_libraries(ultrasonic_publisher
 install(TARGETS ultrasonic_publisher
 	DESTINATION lib/${PROJECT_NAME}
 )
+
+install(DIRECTORY 
+	launch
+	params
+	DESTINATION share/${PROJECT_NAME}/
+)
+
 
 ament_package()

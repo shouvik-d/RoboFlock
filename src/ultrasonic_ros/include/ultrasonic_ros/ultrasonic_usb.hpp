@@ -1,5 +1,5 @@
-#ifndef __ULTRASONIC_USB_HPP__
-#define __ULTRASONIC_USB_HPP__
+#ifndef ULTRASONIC_USB_HPP
+#define ULTRASONIC_USB_HPP
 
 const char ARDUINO_PORT[] = "/dev/ttyACM0";
 
@@ -25,4 +25,4 @@ int init_arduino (void);
 void get_arduino_data (uint8_t *, uint8_t *, uint8_t *);
 
 
-#endif /* __ULRASONIC_USB_HPP__ */
+#endif /* ULTRASONIC_USB_HPP */
