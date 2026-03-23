@@ -123,7 +123,6 @@ UltrasonicPublisher::declare_parameters()
 	this->declare_parameter<double>("min_range", 0.02); // meters
 	this->declare_parameter<double>("max_range", 2.0); // meters
 	this->declare_parameter<bool>("publish_tf", false);
-	this->declare_parameter<bool>("use_sim_time", false);
 	
 	frame_ids_ = this->get_parameter("frame_ids").as_string_array();
 	
@@ -145,7 +144,6 @@ UltrasonicPublisher::declare_parameters()
 	min_range_ = this->get_parameter("min_range").as_double();
 	max_range_ = this->get_parameter("max_range").as_double();
 	publish_tf_ = this->get_parameter("publish_tf").as_bool();
-	use_sim_time_ = this->get_parameter("use_sim_time").as_bool();
 }
 
 rcl_interfaces::msg::SetParametersResult
@@ -251,13 +249,6 @@ UltrasonicPublisher::on_parameter_change(const std::vector<rclcpp::Parameter> & 
 				"Updated `publish_tf` boolean.\n"
 			);
 		}
-		else if (param.get_name() == "use_sim_time")
-		{
-			use_sim_time_ = param.as_bool();
-			RCLCPP_INFO(this->get_logger(),
-				"Updated `use_sim_time` boolean.\n"
-			);
-		}
 		else
 		{
 			RCLCPP_WARN(this->get_logger(),
@@ -277,12 +268,22 @@ UltrasonicPublisher::publish_data()
 	for (size_t i = 0; i < publishers_.size(); i++)
 	{
 		sensor_msgs_[i].header.stamp = now;
-		sensor_msgs_[i].range = sensor_data_[i];
-		publishers_[i]->publish(sensor_msgs_[i]);
-		RCLCPP_DEBUG(this->get_logger(),
-			"Published %s: range=%f\n",
-			frame_ids_[i].c_str(), sensor_msgs_[i].range
-		);
+		if (sensor_data_[i] <= 200)
+		{
+			sensor_msgs_[i].range = sensor_data_[i];
+			publishers_[i]->publish(sensor_msgs_[i]);
+			RCLCPP_INFO(this->get_logger(),
+				"Published %s: range=%f\n",
+				frame_ids_[i].c_str(), sensor_msgs_[i].range
+			);
+		}
+		else
+		{
+			RCLCPP_INFO(this->get_logger(),
+				"Invalid data from %s\n",
+				frame_ids_[i].c_str()
+			);
+		}
 	}
 }
 

@@ -1,5 +1,5 @@
 ultrasonic_publisher:
-	ros2_parameters:
+	ros2__parameters:
 		frame_ids: ["left_ultrasonic", "center_ultrasonic", "right_ultrasonic"]
 		update_rate: 20.0
 		field_of_view: 0.5236

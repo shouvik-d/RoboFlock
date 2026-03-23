@@ -33,7 +33,6 @@ class UltrasonicPublisher : public rclcpp::Node
 		double min_range_;
 		double max_range_;
 		bool publish_tf_;
-		bool use_sim_time_;	
 };
 
 #endif /* ULTRASONIC_PUBLISHER_HPP */
