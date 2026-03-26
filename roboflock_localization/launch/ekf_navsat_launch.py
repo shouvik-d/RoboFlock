@@ -49,5 +49,21 @@ def generate_launch_description():
                         ('odometry/gps', 'odometry/gps'),
                         ('odometry/filtered', 'odometry/global')]           
 
-           )           
+           ),
+    launch_ros.actions.Node(
+            package='nmea_navsat_driver', 
+            executable='nmea_serial_driver', 
+            name='gps',
+            output='screen',
+            parameters=[os.path.join(parameters_file_dir, 'gps.yaml')],
+            remappings=[('sensor_msgs/NavSatFix', 'sensor_msgs/NavSatFix')]
+    ),
+    launch_ros.actions.Node(
+            package='mpu9250driver', 
+            executable='mpu9250driver', 
+            name='imu',
+            output='screen',
+            parameters=[os.path.join(parameters_file_dir, 'mpu9250.yaml')],
+            remappings=[('sensor_msgs/Imu', 'sensor_msgs/Imu')]
+    )                
 ])
