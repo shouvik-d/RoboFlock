@@ -35,7 +35,7 @@ MPU9250Driver::MPU9250Driver() : Node("mpu9250publisher")
   mpu9250_->printConfig();
   mpu9250_->printOffsets();
   // Create publisher
-  publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("imu", 10);
+  publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("/imu/data", 10);
   std::chrono::duration<int64_t, std::milli> frequency =
       1000ms / this->get_parameter("gyro_range").as_int();
   timer_ = this->create_wall_timer(frequency, std::bind(&MPU9250Driver::handleInput, this));
