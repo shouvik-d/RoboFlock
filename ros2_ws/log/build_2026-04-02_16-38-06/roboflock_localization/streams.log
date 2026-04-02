@@ -1,0 +1,28 @@
+[0.076s] Invoking command in '/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/roboflock_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/roboflock_localization -- -j4 -l4
+[0.324s] [100%] Built target roboflock_localization_lib
+[0.385s] Invoked command in '/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/roboflock_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/roboflock_localization -- -j4 -l4
+[0.457s] Invoking command in '/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/roboflock_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/roboflock_localization
+[0.494s] -- Install configuration: ""
+[0.496s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//launch
+[0.509s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//launch/ekf_navsat_launch.py
+[0.510s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//params
+[0.514s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//params/mpu9250.yaml
+[0.514s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//params/ekf_navsat_params.yaml
+[0.514s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//params/gps.yaml
+[0.515s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/ament_index/resource_index/package_run_dependencies/roboflock_localization
+[0.515s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/ament_index/resource_index/parent_prefix_path/roboflock_localization
+[0.515s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/environment/ament_prefix_path.sh
+[0.515s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/environment/ament_prefix_path.dsv
+[0.516s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/environment/path.sh
+[0.516s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/environment/path.dsv
+[0.516s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/local_setup.bash
+[0.516s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/local_setup.sh
+[0.516s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/local_setup.zsh
+[0.516s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/local_setup.dsv
+[0.516s] -- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/package.dsv
+[0.531s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/ament_index/resource_index/packages/roboflock_localization
+[0.531s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.531s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/cmake/roboflock_localizationConfig.cmake
+[0.531s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/cmake/roboflock_localizationConfig-version.cmake
+[0.531s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/package.xml
+[0.540s] Invoked command in '/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/roboflock_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/roboflock_localization

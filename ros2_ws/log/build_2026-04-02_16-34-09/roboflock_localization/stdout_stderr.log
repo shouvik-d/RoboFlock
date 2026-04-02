@@ -1,0 +1,49 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found robot_localization: 3.5.4 (/opt/ros/humble/share/robot_localization/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/roboflock_localization
+[ 50%] [32mBuilding CXX object CMakeFiles/roboflock_localization_lib.dir/src/rf_localization_node.cpp.o[0m
+[100%] [32m[1mLinking CXX static library libroboflock_localization_lib.a[0m
+[100%] Built target roboflock_localization_lib
+-- Install configuration: ""
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//launch
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//launch/ekf_navsat_launch.py
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//params
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//params/mpu9250.yaml
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//params/ekf_navsat_params.yaml
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//params/gps.yaml
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/ament_index/resource_index/package_run_dependencies/roboflock_localization
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/ament_index/resource_index/parent_prefix_path/roboflock_localization
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/environment/ament_prefix_path.sh
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/environment/ament_prefix_path.dsv
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/environment/path.sh
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/environment/path.dsv
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/local_setup.bash
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/local_setup.sh
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/local_setup.zsh
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/local_setup.dsv
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/package.dsv
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/ament_index/resource_index/packages/roboflock_localization
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/cmake/roboflock_localizationConfig.cmake
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/cmake/roboflock_localizationConfig-version.cmake
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/package.xml

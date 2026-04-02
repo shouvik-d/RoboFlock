@@ -1,0 +1,24 @@
+[100%] Built target roboflock_localization_lib
+-- Install configuration: ""
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//launch
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//launch/ekf_navsat_launch.py
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//params
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//params/mpu9250.yaml
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//params/ekf_navsat_params.yaml
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization//params/gps.yaml
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/ament_index/resource_index/package_run_dependencies/roboflock_localization
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/ament_index/resource_index/parent_prefix_path/roboflock_localization
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/environment/ament_prefix_path.sh
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/environment/path.sh
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/environment/path.dsv
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/local_setup.bash
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/local_setup.sh
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/local_setup.zsh
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/local_setup.dsv
+-- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/package.dsv
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/ament_index/resource_index/packages/roboflock_localization
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/cmake/roboflock_localizationConfig.cmake
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/cmake/roboflock_localizationConfig-version.cmake
+-- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/roboflock_localization/share/roboflock_localization/package.xml

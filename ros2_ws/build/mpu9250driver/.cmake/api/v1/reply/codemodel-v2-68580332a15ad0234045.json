@@ -1,0 +1,148 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-135df0adac51bb289ded.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						4
+					]
+				},
+				{
+					"build" : "lib",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"jsonFile" : "directory-lib-c12f15c6f888b43a891c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib"
+				},
+				{
+					"build" : "lib/i2c",
+					"jsonFile" : "directory-lib.i2c-0c80d98a8614d72fa6ee.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "lib/i2c",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "lib/mpu9250sensor",
+					"jsonFile" : "directory-lib.mpu9250sensor-6cfc9ef9d51707f30401.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "lib/mpu9250sensor",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "mpu9250driver",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "linux_i2c_communicator::@075539e480db65e62b85",
+					"jsonFile" : "target-linux_i2c_communicator-b09b1d1020bed5694c1f.json",
+					"name" : "linux_i2c_communicator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mpu9250driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mpu9250driver-6af682f09e8a1d87939a.json",
+					"name" : "mpu9250driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mpu9250driver_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mpu9250driver_uninstall-705970518b3c2d9ac431.json",
+					"name" : "mpu9250driver_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "mpu9250sensor::@0c6493a29ed69bded8c7",
+					"jsonFile" : "target-mpu9250sensor-865d6f19b570482372b2.json",
+					"name" : "mpu9250sensor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-0fd3ea9db9385bbe55f3.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/mpu9250driver",
+		"source" : "/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/ros2_mpu9250_driver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

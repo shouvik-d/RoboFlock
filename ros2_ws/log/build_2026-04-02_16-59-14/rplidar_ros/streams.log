@@ -1,0 +1,57 @@
+[0.253s] Invoking command in '/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros -- -j4 -l4
+[0.812s] [ 47%] Built target rplidar_composition
+[0.858s] [ 94%] Built target rplidar_node
+[1.083s] [100%] Built target rplidar_client
+[1.379s] Invoked command in '/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros -- -j4 -l4
+[1.383s] Invoking command in '/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros
+[1.417s] -- Install configuration: ""
+[1.425s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch
+[1.425s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_c1_launch.py
+[1.428s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m12_launch.py
+[1.428s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m8_launch.py
+[1.433s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2e_launch.py
+[1.434s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m7_launch.py
+[1.434s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_t1_launch.py
+[1.435s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_c1_launch.py
+[1.435s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m8_launch.py
+[1.437s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s3_launch.py
+[1.438s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_t1_launch.py
+[1.439s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m12_launch.py
+[1.459s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp_launch.py
+[1.459s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2_launch.py
+[1.478s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s3_launch.py
+[1.479s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a1_launch.py
+[1.496s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2_launch.py
+[1.496s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m7_launch.py
+[1.496s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_launch.py
+[1.497s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2e_launch.py
+[1.497s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/__pycache__
+[1.499s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/__pycache__/rplidar_a1_launch.cpython-310.pyc
+[1.500s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a1_launch.py
+[1.500s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3_launch.py
+[1.500s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3_launch.py
+[1.500s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp_launch.py
+[1.500s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_launch.py
+[1.500s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/rviz
+[1.501s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/rviz/rplidar_ros.rviz
+[1.503s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_node
+[1.503s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[1.503s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_client
+[1.503s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros
+[1.503s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros
+[1.503s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh
+[1.504s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv
+[1.504s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/environment/path.sh
+[1.504s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/environment/path.dsv
+[1.504s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/local_setup.bash
+[1.504s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/local_setup.sh
+[1.504s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/local_setup.zsh
+[1.504s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/local_setup.dsv
+[1.504s] -- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.dsv
+[1.504s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros
+[1.504s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.504s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.504s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake
+[1.505s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake
+[1.505s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.xml
+[1.571s] Invoked command in '/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libroboflock_localization_lib.a CMakeFiles/roboflock_localization_lib.dir/src/rf_localization_node.cpp.o
+/usr/bin/ranlib libroboflock_localization_lib.a

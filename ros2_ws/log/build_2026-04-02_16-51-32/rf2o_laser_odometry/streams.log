@@ -1,0 +1,27 @@
+[0.640s] Invoking command in '/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rf2o_laser_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rf2o_laser_odometry -- -j4 -l4
+[1.242s] [ 60%] Built target rf2o_laser_odometry_node
+[1.444s] [100%] Built target rf2o_laser_odometry
+[1.645s] Invoked command in '/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rf2o_laser_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rf2o_laser_odometry -- -j4 -l4
+[1.646s] Invoking command in '/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rf2o_laser_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rf2o_laser_odometry
+[1.652s] -- Install configuration: ""
+[1.653s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/lib/rf2o_laser_odometry/rf2o_laser_odometry_node
+[1.653s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/launch
+[1.653s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/launch/rf2o_laser_odometry.launch.py
+[1.653s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/launch/__pycache__
+[1.653s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/launch/__pycache__/rf2o_laser_odometry.launch.cpython-310.pyc
+[1.653s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/ament_index/resource_index/package_run_dependencies/rf2o_laser_odometry
+[1.653s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/ament_index/resource_index/parent_prefix_path/rf2o_laser_odometry
+[1.653s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/ament_prefix_path.sh
+[1.653s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/ament_prefix_path.dsv
+[1.653s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/path.sh
+[1.654s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/path.dsv
+[1.657s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.bash
+[1.665s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.sh
+[1.666s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.zsh
+[1.666s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.dsv
+[1.676s] -- Installing: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.dsv
+[1.677s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/ament_index/resource_index/packages/rf2o_laser_odometry
+[1.677s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/cmake/rf2o_laser_odometryConfig.cmake
+[1.677s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/cmake/rf2o_laser_odometryConfig-version.cmake
+[1.681s] -- Up-to-date: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.xml
+[1.681s] Invoked command in '/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rf2o_laser_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rf2o_laser_odometry
