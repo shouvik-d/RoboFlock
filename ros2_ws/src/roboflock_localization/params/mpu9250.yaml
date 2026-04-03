@@ -1,4 +1,4 @@
-mpu9250driver_node:
+imu:
   ros__parameters:
     calibrate: True
     # Gyroscope range: 0 -> +-250°/s, 1 -> +-500°/s, 2 -> +-1000°/s, 3 -> +-2000°/s

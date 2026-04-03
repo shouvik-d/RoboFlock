@@ -1,4 +1,4 @@
-nmea_serial_driver:
+gps:
   ros__parameters:
     frequency: 5.0
     port: /dev/ttyACM0
