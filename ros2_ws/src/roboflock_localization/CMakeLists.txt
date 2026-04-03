@@ -18,10 +18,30 @@ add_library(${PROJECT_NAME}_lib
   src/rf_localization_node.cpp
 )
 
+target_include_directories(${PROJECT_NAME}_lib PUBLIC
+	"$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
+	"$<INSTALL_INTERFACE:include/${PROJECT_NAME}>"
+)
+
 target_link_libraries(${PROJECT_NAME}_lib PUBLIC
 	${robot_localization_LIBRARIES}
 )
 
+#install(DIRECTORY include/${PROJECT_NAME}
+#	DESTINATION include
+#)
+
+install(TARGETS ${PROJECT_NAME}_lib
+	EXPORT ${PROJECT_NAME}_lib_targets
+	LIBRARY DESTINATION lib
+	ARCHIVE DESTINATION lib
+	RUNTIME DESTINATION bin
+	#INCLUDES DESTINATION include/${PROJECT_NAME}
+)
+
+#ament_export_include_directories(include)
+ament_export_libraries(${PROJECT_NAME}_lib)
+ament_export_targets(${PROJECT_NAME}_lib_targets HAS_LIBRARY_TARGET)
 ament_export_dependencies(robot_localization)
 
 install(DIRECTORY

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros
-# Build directory: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros
+# Source directory: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros
+# Build directory: /home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

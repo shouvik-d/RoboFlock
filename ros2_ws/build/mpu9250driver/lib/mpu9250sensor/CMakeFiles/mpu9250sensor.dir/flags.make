@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/ros2_mpu9250_driver/lib/mpu9250sensor/include/mpu9250sensor -I/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/ros2_mpu9250_driver/lib/i2c/include/i2c_comm_interface
+CXX_INCLUDES = -I/home/roboflock/RoboFlock/ros2_ws/src/ros2_mpu9250_driver/lib/mpu9250sensor/include/mpu9250sensor -I/home/roboflock/RoboFlock/ros2_ws/src/ros2_mpu9250_driver/lib/i2c/include/i2c_comm_interface
 
 CXX_FLAGS = -Wall -Wextra -Wpedantic -std=gnu++14
 

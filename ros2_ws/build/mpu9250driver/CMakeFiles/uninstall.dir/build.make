@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/ros2_mpu9250_driver
+CMAKE_SOURCE_DIR = /home/roboflock/RoboFlock/ros2_ws/src/ros2_mpu9250_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/mpu9250driver
+CMAKE_BINARY_DIR = /home/roboflock/RoboFlock/ros2_ws/build/mpu9250driver
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/mpu9250driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/ros2_mpu9250_driver /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/ros2_mpu9250_driver /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/mpu9250driver /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/mpu9250driver /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/mpu9250driver/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/roboflock/RoboFlock/ros2_ws/build/mpu9250driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roboflock/RoboFlock/ros2_ws/src/ros2_mpu9250_driver /home/roboflock/RoboFlock/ros2_ws/src/ros2_mpu9250_driver /home/roboflock/RoboFlock/ros2_ws/build/mpu9250driver /home/roboflock/RoboFlock/ros2_ws/build/mpu9250driver /home/roboflock/RoboFlock/ros2_ws/build/mpu9250driver/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

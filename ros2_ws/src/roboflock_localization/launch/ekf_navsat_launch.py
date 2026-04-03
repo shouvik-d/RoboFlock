@@ -9,10 +9,17 @@ from launch.actions import DeclareLaunchArgument
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
+    
     roboflock_localization_dir = get_package_share_directory('roboflock_localization')
+
     parameters_file_dir = os.path.join(roboflock_localization_dir, 'params')
+    print(roboflock_localization_dir)
     parameters_file_path = os.path.join(parameters_file_dir, 'ekf_navsat_params.yaml')
+    parameters_file_path_gps = os.path.join(parameters_file_dir, 'gps.yaml')
     os.environ['FILE_PATH'] = str(parameters_file_dir)
+
+    print(parameters_file_path_gps)
+
     return LaunchDescription([
         launch.actions.DeclareLaunchArgument(
             'output_final_position',
@@ -55,7 +62,7 @@ def generate_launch_description():
             executable='nmea_serial_driver', 
             name='gps',
             output='screen',
-            parameters=[os.path.join(parameters_file_dir, 'gps.yaml')],
+            parameters=[parameters_file_path_gps],
             remappings=[('/fix', '/gps/fix')]
     ),
     launch_ros.actions.Node(
@@ -79,7 +86,6 @@ def generate_launch_description():
             executable='rf2o_laser_odometry_node', 
             name='rf2o_laser_odometry',
             output='screen',
-            parameters=[os.path.join(parameters_file_dir, 'rf2o.yaml')],
-            remappings=[('/laser_scan', '/scan')]
+            parameters=[os.path.join(parameters_file_dir, 'rf2o.yaml')]
     )                              
 ])

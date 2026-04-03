@@ -1,8 +1,8 @@
-# Install script for directory: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/ros2_mpu9250_driver/lib
+# Install script for directory: /home/roboflock/RoboFlock/ros2_ws/src/ros2_mpu9250_driver/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/mpu9250driver")
+  set(CMAKE_INSTALL_PREFIX "/home/roboflock/RoboFlock/ros2_ws/install/mpu9250driver")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/mpu9250driver/lib/i2c/cmake_install.cmake")
-  include("/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/mpu9250driver/lib/mpu9250sensor/cmake_install.cmake")
+  include("/home/roboflock/RoboFlock/ros2_ws/build/mpu9250driver/lib/i2c/cmake_install.cmake")
+  include("/home/roboflock/RoboFlock/ros2_ws/build/mpu9250driver/lib/mpu9250sensor/cmake_install.cmake")
 
 endif()
 

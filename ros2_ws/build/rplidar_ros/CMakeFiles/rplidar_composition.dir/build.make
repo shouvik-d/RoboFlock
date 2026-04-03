@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros
+CMAKE_SOURCE_DIR = /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros
+CMAKE_BINARY_DIR = /home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros
 
 # Include any dependencies generated for this target.
 include CMakeFiles/rplidar_composition.dir/depend.make
@@ -70,242 +70,242 @@ include CMakeFiles/rplidar_composition.dir/progress.make
 include CMakeFiles/rplidar_composition.dir/flags.make
 
 CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/src/rplidar_node.cpp
+CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/src/rplidar_node.cpp
 CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o -MF CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o.d -o CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/src/rplidar_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o -MF CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o.d -o CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/src/rplidar_node.cpp
 
 CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/src/rplidar_node.cpp > CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/src/rplidar_node.cpp > CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.i
 
 CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/src/rplidar_node.cpp -o CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/src/rplidar_node.cpp -o CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.s
 
 CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp
+CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp
 CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp
 
 CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.i
 
 CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.s
 
 CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp
+CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp
 CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp
 
 CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.i
 
 CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.s
 
 CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/timer.cpp
+CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/timer.cpp
 CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/timer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/timer.cpp
 
 CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/timer.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/timer.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.i
 
 CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/timer.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/arch/linux/timer.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.s
 
 CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp
+CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp
 CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp
 
 CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.i
 
 CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.s
 
 CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp
+CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp
 CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp
 
 CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.i
 
 CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.s
 
 CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp
+CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp
 CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp
 
 CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.i
 
 CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.s
 
 CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp
+CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp
 CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp
 
 CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.i
 
 CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.s
 
 CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/hal/thread.cpp
+CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/hal/thread.cpp
 CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/hal/thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/hal/thread.cpp
 
 CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/hal/thread.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/hal/thread.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.i
 
 CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/hal/thread.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/hal/thread.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.s
 
 CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/rplidar_driver.cpp
+CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/rplidar_driver.cpp
 CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/rplidar_driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/rplidar_driver.cpp
 
 CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/rplidar_driver.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/rplidar_driver.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.i
 
 CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/rplidar_driver.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/rplidar_driver.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.s
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_async_transceiver.cpp
+CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_async_transceiver.cpp
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_async_transceiver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_async_transceiver.cpp
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_async_transceiver.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_async_transceiver.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.i
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_async_transceiver.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_async_transceiver.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.s
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_crc.cpp
+CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_crc.cpp
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_crc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_crc.cpp
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_crc.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_crc.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.i
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_crc.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_crc.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.s
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp
+CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.i
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.s
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_lidarprotocol_codec.cpp
+CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_lidarprotocol_codec.cpp
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_lidarprotocol_codec.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_lidarprotocol_codec.cpp
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_lidarprotocol_codec.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_lidarprotocol_codec.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.i
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_lidarprotocol_codec.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_lidarprotocol_codec.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.s
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_serial_channel.cpp
+CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_serial_channel.cpp
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_serial_channel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_serial_channel.cpp
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_serial_channel.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_serial_channel.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.i
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_serial_channel.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_serial_channel.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.s
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp
+CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.i
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.s
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.o: CMakeFiles/rplidar_composition.dir/flags.make
-CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_udp_channel.cpp
+CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_udp_channel.cpp
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.o: CMakeFiles/rplidar_composition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_udp_channel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.o -MF CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.o.d -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_udp_channel.cpp
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_udp_channel.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_udp_channel.cpp > CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.i
 
 CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_udp_channel.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/sdk/src/sl_udp_channel.cpp -o CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.s
 
 # Object files for target rplidar_composition
 rplidar_composition_OBJECTS = \
@@ -420,7 +420,7 @@ rplidar_composition: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.
 rplidar_composition: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 rplidar_composition: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 rplidar_composition: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
-rplidar_composition: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+rplidar_composition: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 rplidar_composition: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 rplidar_composition: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 rplidar_composition: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
@@ -435,7 +435,7 @@ rplidar_composition: /opt/ros/humble/lib/librcpputils.so
 rplidar_composition: /opt/ros/humble/lib/librosidl_runtime_c.so
 rplidar_composition: /opt/ros/humble/lib/librcutils.so
 rplidar_composition: CMakeFiles/rplidar_composition.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable rplidar_composition"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable rplidar_composition"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rplidar_composition.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -447,6 +447,6 @@ CMakeFiles/rplidar_composition.dir/clean:
 .PHONY : CMakeFiles/rplidar_composition.dir/clean
 
 CMakeFiles/rplidar_composition.dir/depend:
-	cd /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles/rplidar_composition.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros /home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros /home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros /home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles/rplidar_composition.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rplidar_composition.dir/depend
 

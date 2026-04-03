@@ -2,7 +2,7 @@
 
 # since this file is sourced use either the provided AMENT_CURRENT_PREFIX
 # or fall back to the destination set at configure time
-: ${AMENT_CURRENT_PREFIX:="/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/install/mpu9250driver"}
+: ${AMENT_CURRENT_PREFIX:="/home/roboflock/RoboFlock/ros2_ws/install/mpu9250driver"}
 if [ ! -d "$AMENT_CURRENT_PREFIX" ]; then
   if [ -z "$COLCON_CURRENT_PREFIX" ]; then
     echo "The compile time prefix path '$AMENT_CURRENT_PREFIX' doesn't " \

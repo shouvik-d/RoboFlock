@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros
+CMAKE_SOURCE_DIR = /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros
+CMAKE_BINARY_DIR = /home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros
 
 # Include any dependencies generated for this target.
 include CMakeFiles/rplidar_client.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/rplidar_client.dir/progress.make
 include CMakeFiles/rplidar_client.dir/flags.make
 
 CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.o: CMakeFiles/rplidar_client.dir/flags.make
-CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.o: /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/src/rplidar_client.cpp
+CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.o: /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/src/rplidar_client.cpp
 CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.o: CMakeFiles/rplidar_client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.o -MF CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.o.d -o CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.o -c /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/src/rplidar_client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.o -MF CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.o.d -o CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.o -c /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/src/rplidar_client.cpp
 
 CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/src/rplidar_client.cpp > CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/src/rplidar_client.cpp > CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.i
 
 CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros/src/rplidar_client.cpp -o CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros/src/rplidar_client.cpp -o CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.s
 
 # Object files for target rplidar_client
 rplidar_client_OBJECTS = \
@@ -164,7 +164,7 @@ rplidar_client: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
 rplidar_client: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 rplidar_client: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 rplidar_client: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
-rplidar_client: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+rplidar_client: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 rplidar_client: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 rplidar_client: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 rplidar_client: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
@@ -179,7 +179,7 @@ rplidar_client: /opt/ros/humble/lib/librcpputils.so
 rplidar_client: /opt/ros/humble/lib/librosidl_runtime_c.so
 rplidar_client: /opt/ros/humble/lib/librcutils.so
 rplidar_client: CMakeFiles/rplidar_client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rplidar_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rplidar_client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rplidar_client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -191,6 +191,6 @@ CMakeFiles/rplidar_client.dir/clean:
 .PHONY : CMakeFiles/rplidar_client.dir/clean
 
 CMakeFiles/rplidar_client.dir/depend:
-	cd /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/src/rplidar_ros /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros /home/marcob1129/Desktop/VSCode/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles/rplidar_client.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros /home/roboflock/RoboFlock/ros2_ws/src/rplidar_ros /home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros /home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros /home/roboflock/RoboFlock/ros2_ws/build/rplidar_ros/CMakeFiles/rplidar_client.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rplidar_client.dir/depend
 
