@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>GPS Map</title>
+
+    <link rel="stylesheet" href="/static/leaflet.css">
+    <script src="/static/leaflet.js"></script>
+    <script src="/static/socket.io.min.js"></script>
+    
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        /* Container for the Right Button */
+        #controls-right {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+        }
+
+        /* Container for the Left Button */
+        #controls-left {
+            position: fixed;
+            bottom: 24px;
+            left: 24px;
+            z-index: 1000;
+        }
+
+        /* Shared styling for both buttons */
+        .control-btn {
+            padding: 14px 22px;
+            background-color: gray;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .control-btn:hover {
+            background-color: darkgray;
+        }
+
+        .control-btn:active {
+            background-color: rgb(91, 90, 90);
+        }
+    
+        #map {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<!-- change these buttons so they could share a styling class and
+     have unique div ids, DONE
+-->
+<div id="controls-left">
+    <button class="control-btn" onclick="returnRobot()">RETURN ROBOT</button>
+</div>
+
+<div id="controls-right">
+    <button class="control-btn" onclick="comeToBase()">COME TO BASE</button>
+</div>
+
+<script>
+    var map = L.map("map", {
+        zoomControl: true,
+        attributionControl: false
+    });
+
+    var socket = io();
+
+    // Function for the Right Button
+    function comeToBase() {
+        socket.emit("send_message", {
+            text: "COME TO BASE"
+        });
+    }
+
+    // Function for the Left Button
+    function returnRobot() {
+        socket.emit("send_message", {
+            text: "RETURN ROBOT"
+        });
+    }
+
+    /*
+    var imageBounds = [
+        [42.999327842500016, -78.79145975221716],     // southwest
+        [43.002117815552694, -78.78467616117943]      // northeast
+    ];
+    */
+   
+    var imageBounds = [
+        [42.95677, -78.82238],     // southwest
+        [42.96920, -78.80229]      // northeast
+    ];
+
+    L.imageOverlay("/static/map.png", imageBounds).addTo(map);
+    map.fitBounds(imageBounds);
+
+    // prob have to change this stuff in order to present two waypoints,
+    //  one for beacon and one for the robot, but idk how to set it up yet.
+    //  likely want the init marker positions to come from the robot and beacon 
+    // too rather than have it hardcoded but we'll see.
+    
+    // for now im just hardcoding, can't get the init routines to work for some reason
+    // hardcoded for spot in front of tree in lot across slee and augsperger
+    var markerRobot = L.circleMarker([42.997812, -78.783850], {
+        color: 'blue',
+        fillColor: '#30f',
+        fillOpacity: 0.8,
+        radius: 5,
+        weight: 2
+    }).addTo(map);
+
+    markerRobot.bindTooltip("Robot", { 
+        permanent: true, 
+        direction: 'right' 
+    });
+
+    var pathRobot = L.polyline([], {
+        color: "blue",
+        weight: 3
+    }).addTo(map);
+
+
+
+    // i have to update this to work with two gps locations, the beacon and robot.
+    // alright, i just naively updated everything, we'll see if it works...
+
+    // note for jetsonScript that passes data to here, first coordinates are the robot's/jetson's and second are the beacon's
+
+    // think i'll just set a flag here to handle the first valid gps coordinates received on the user side,
+    //  and handle that first marker being drawn within the gps_update function
+    socket.on("gps_update", function(data) {
+        var latlng1 = [data.lat1, data.lon1];
+
+        markerRobot.setLatLng(latlng1);
+        pathRobot.addLatLng(latlng1);
+    });
+</script>
+
+</body>
+</html>

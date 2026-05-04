@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>GPS Map</title>
+
+    <link rel="stylesheet" href="/static/leaflet.css">
+    <script src="/static/leaflet.js"></script>
+    <script src="/static/socket.io.min.js"></script>
+    
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        /* Container for the Right Button */
+        #controls-right {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+        }
+
+        /* Container for the Left Button */
+        #controls-left {
+            position: fixed;
+            bottom: 24px;
+            left: 24px;
+            z-index: 1000;
+        }
+
+        /* Shared styling for both buttons */
+        .control-btn {
+            padding: 14px 22px;
+            background-color: gray;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .control-btn:hover {
+            background-color: darkgray;
+        }
+
+        .control-btn:active {
+            background-color: rgb(91, 90, 90);
+        }
+    
+        #map {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<!-- change these buttons so they could share a styling class and
+     have unique div ids, DONE
+-->
+<div id="controls-left">
+    <button class="control-btn" onclick="reRobot()">RETURN ROBOT</button>
+</div>
+
+<div id="controls-right">
+    <button class="control-btn" onclick="comeToBase()">COME TO BASE</button>
+</div>
+
+<script>
+    var map = L.map("map", {
+        zoomControl: true,
+        attributionControl: false
+    });
+
+    var socket = io();
+
+    // Function for the Right Button
+    function comeToBase() {
+        socket.emit("send_message", {
+            text: "COME TO BASE"
+        });
+    }
+
+    // Function for the Left Button
+    function stopRobot() {
+        socket.emit("send_message", {
+            text: "STOP ROBOT"
+        });
+    }
+
+    var imageBounds = [
+        [42.999327842500016, -78.79145975221716],     // southwest
+        [43.002117815552694, -78.78467616117943]      // northeast
+    ];
+
+    L.imageOverlay("/static/map.png", imageBounds).addTo(map);
+    map.fitBounds(imageBounds);
+
+    // prob have to change this stuff in order to present two waypoints,
+    //  one for beacon and one for the robot, but idk how to set it up yet.
+    //  likely want the init marker positions to come from the robot and beacon 
+    // too rather than have it hardcoded but we'll see.
+    var markerRobot = L.circleMarker([43.000680375077756,-78.78762378446139], {
+        color: 'blue',
+        fillColor: '#30f',
+        fillOpacity: 0.8,
+        radius: 5,
+        weight: 2
+    }).addTo(map);
+
+    var pathRobot = L.polyline([], {
+        color: "blue",
+        weight: 3
+    }).addTo(map);
+
+    var markerBeacon = L.circleMarker([43.000790006803750,-78.78762378446139], {
+        color: 'red',
+        fillColor: '#30f',
+        fillOpacity: 0.8,
+        radius: 5,
+        weight: 2
+    }).addTo(map);
+
+    var pathBeacon = L.polyline([], {
+        color: "red",
+        weight: 3
+    }).addTo(map);
+
+
+    // i have to update this to work with two gps locations, the beacon and robot.
+    // alright, i just naively updated everything, we'll see if it works...
+
+    // note for jetsonScript that passes data to here, first coordinates are the robot's/jetson's and second are the beacon's
+    socket.on("gps_update", function(data) {
+        var latlng1 = [data.lat1, data.lon1];
+        var latlng2 = [data.lat2, data.lon2];
+
+        markerRobot.setLatLng(latlng1);
+        pathRobot.addLatLng(latlng1);
+        markerBeacon.setLatLng(latlng2);
+        pathBeacon.addLatLng(latlng2);
+    });
+</script>
+
+</body>
+</html>
